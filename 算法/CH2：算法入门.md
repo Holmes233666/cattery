@@ -65,3 +65,4 @@ Proving correctness Using Loop-invariants【<font color=#FF0000 >外层为循环
 
 关心增长率，低阶和常数丢弃 Drop low-order terms; ignore leading constants
 
+Example：$3n^3+90n^2-5n+6046 = \theta(n^3)$
