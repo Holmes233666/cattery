@@ -1,10 +1,5 @@
 # CH1：Introduction
 
-$$
-\rightarrow
-$$
-
-
 ## 1.1 Factors of Programming
 
 - programming language
@@ -18,11 +13,9 @@ $$
   ![image-20220319200833490](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220319200833490.png)
 
   架构的类型：
-  
   $$
   \begin{cases}C2\ Style：conponent\  \& \ connector\\Pipe-Fliter\ Style:输入\rightarrow 输出\\Repositories\ Style：以某一数据源为中心的操作\end{cases}
   $$
-  
   成熟的模式：逐步产生商业架构
 
   - Java EE
@@ -87,4 +80,14 @@ issues：
 
 加之主频的提升不大，算法更为重要
 
-1.3.4 About course
+### 1.3.4 About course
+
+- Design and Analysis
+
+  怎么找算法？
+
+  评价算法，定量
+
+  ![image-20220320105027537](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220320105027537.png)
+
+  
