@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 20 Mar 2022 11:25:26 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 21 Mar 2022 04:07:43 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -30,11 +30,16 @@
         </item>
         <item>
             <title><![CDATA[CH1：Introduction]]></title>
-            <description><![CDATA[$$
-\rightarrow
-$$]]></description>
-            <link>https://xinwuyun.github.io/算法/ch1.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/算法/ch1.html</guid>
+            <description><![CDATA[Concept：A well-Defined computational procedure that takes some value, or set of values, as input and proceduces some value, or set of values, as output.]]></description>
+            <link>https://xinwuyun.github.io/算法/CH1：Introduction.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH1：Introduction.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>CH2：算法入门]]></title>
+            <description><![CDATA[The problem of sorting]]></description>
+            <link>https://xinwuyun.github.io/算法/CH2：算法入门.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH2：算法入门.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
