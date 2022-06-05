@@ -7,3 +7,6 @@
 + [算法分析与设计](算法/about.md)
   + [CH1：Introduction](算法/CH1：Introduction.md)
   + [CH2：算法入门](算法/CH2：算法入门.md)
+  + [CH2：算法入门_review](算法/CH2：算法入门_review.md)
+  + [CH3：Growth of Functions](算法/CH3：Growth of Functions.md)
+  + [CH3：Growth of Functions_review](算法/CH3：Growth of Functions_review.md)
