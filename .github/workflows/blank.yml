@@ -17,4 +17,4 @@ jobs:
         token: ${{ secrets.PERSONAL_TOKEN }}
         source_branch: main
         publish_cname: cattery.xinwuyun.cloud
-
+        publish2_cname: cattery.sunyunqi.xyz 
