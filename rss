@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 05 Jun 2022 08:59:10 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 06 Jun 2022 01:25:16 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -44,7 +44,7 @@
         </item>
         <item>
             <title><![CDATA[<center>CH2 算法入门</center>]]></title>
-            <description><![CDATA[排序问题：]]></description>
+            <description><![CDATA[image-20220605145111689]]></description>
             <link>https://xinwuyun.github.io/算法/CH2：算法入门_review.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH2：算法入门_review.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
@@ -57,7 +57,8 @@
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[CH3：Growth of Functions]]></title>
+            <description><![CDATA[image-20220605154233378]]></description>
             <link>https://xinwuyun.github.io/算法/CH3：Growth of Functions_review.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH3：Growth of Functions_review.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
