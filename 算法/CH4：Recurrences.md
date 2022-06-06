@@ -118,6 +118,89 @@ $$
 
 $T(n) = 3T(n/4) + \Theta(n^2)$
 
+#### （1）递归树猜测上界
+
 <img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220605173026528.png" alt="image-20220605173026528" style="zoom:50%;" />
 
 ![image-20220605175243692](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220605175243692.png)
+
+- 最后一层叶子数：$3^{log_4^n} = n^{log_4^3}$
+
+- 每层开销：$((\frac{3}{16})^icn^2)$
+
+- 总开销：$cn^2 + (\frac{3}{16})cn^2+(\frac{3}{16})^2cn^2+......+(\frac{3}{16})^{log_4^n-1}cn^2 + O(n^{log_4^3})=\frac{1\times (1-(\frac{3}{16})^{log_4^n+1})}{1-\frac{3}{16}}+O(n^{log_4^3})$
+
+  使用等比数列的上界作为上限：
+  $$
+  cn^2\sum_{i=0}^{log_4^n-1}(\frac{3}{16})^i = \frac{cn^2}{1-\frac{3}{16}}=\frac{13}{16}cn^2
+  $$
+  所以：
+  $$
+  T(n) =cn^2 + (\frac{3}{16})cn^2+(\frac{3}{16})^2cn^2+......+(\frac{3}{16})^{log_4^n-1}cn^2 + O(n^{log_4^3})=\frac{1\times (1-(\frac{3}{16})^{log_4^n+1})}{1-\frac{3}{16}}+O(n^{log_4^3})\\
+  \leq \frac{13}{16}cn^2 +O(n^{log_4^3}) = O(n^2)
+  $$
+  
+
+#### （2）迭代法证明
+
+递归基础：$T(1) = O(1)$
+
+归纳假设：$T(k) \leq ck^2，当k<n时成立$
+
+证明：$T(n) \leq cn^2$
+$$
+T(n) = 3T(n/4) + d(n^2)\\
+\leq 3c(n/4)^2 + d(n^2)\\
+=\frac{3}{16}cn^2 + d(n^2)\\
+\leq cn^2
+$$
+当$d\geq \frac{16}{13}c$时成立。
+
+## 4.3 Master Method
+
+“cook book” Method for solving recurrences of the form:
+$$
+T(n) = aT(n/b) + f(n)\\
+其中a \geq 1 , b >1
+$$
+![image-20220606103409477](../../../../Users/%E5%AD%99%E8%95%B4%E7%90%A6/AppData/Roaming/Typora/typora-user-images/image-20220606103409477.png)
+
+---
+
+叶子的个数：$a^h = a^{log_b^n} = n^{log_b^a}$
+
+比较树根$f(n)$和$n^{log_b^a}$
+
+三种情况：
+$$
+由根到叶子\begin{cases}减少\\不变\\增大\end{cases}
+$$
+
+---
+
+### 4.3.1 Compare f(n) with $n^{log_b^a}$
+
+#### （1）$f(n) = O(n^{log_{b}^{a}-\epsilon})$  叶子开销严格大于树根
+
+$f(n)$多项式增长慢于$n^{log_b^a}(by\ an\ n^{\epsilon}\ factor)$
+
+$Solution:T(n) = \Theta(n^{log_b^a})$
+
+**<font color = "red">注意是$\Theta$</font>**
+
+#### （2）$f(n) = O(n^{log_{b}^{a}}(lgn)^k)$ 树根开销为叶子开销的$lgn$的$k$次方倍
+
+其中$k\geq 0$，整数
+
+$Solution:T(n) = \Theta(n^{log_b^a}lgn^{k+1})$最终结果多乘以一个树高的k次方
+
+#### （3）$f(n) = O(n^{log_{b}^{a}+\epsilon})$ 叶子开销小于树根开销
+
+需要额外满足$af(n/b)\leq cf(n)$
+
+$T(n)=\Theta(f(n))$树根量级
+
+### 4.3.2 Conclusion
+
+![image-20220606103532574](CH4%EF%BC%9ARecurrences.assets/image-20220606103532574.png)
+
