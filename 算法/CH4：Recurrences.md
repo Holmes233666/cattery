@@ -1,5 +1,9 @@
 # <center>CH4：Recurrences</center>
 
+## MindMap
+
+![CH4：Recurrences](CH4%EF%BC%9ARecurrences.assets/CH4%EF%BC%9ARecurrences.png)
+
 Review：
 
 - MergeSort
@@ -202,5 +206,45 @@ $T(n)=\Theta(f(n))$树根量级
 
 ### 4.3.2 Conclusion
 
+#### （1）方法总结
+
+树根和叶子比较，同时要注意什么时候写$O$，什么时候写$\Omega$，什么时候
+
 ![image-20220606103532574](CH4%EF%BC%9ARecurrences.assets/image-20220606103532574.png)
+
+例题：
+
+#### Example1
+
+$$
+T(n) = 9T(n/3) + n
+$$
+
+$f(n) = n = O(n^{log_b^{a}-\epsilon})= n^{2-\epsilon}$，其中$\epsilon = 1$
+
+所以$T(n) = \Theta(n^2)$
+
+#### Example2
+
+$$
+T(n) = T(2n/3) + 1
+$$
+
+$f(n) = 1 = \Theta(n^{log_{\frac{3}{2}}^1}lg^kn)$，其中$k=1$
+
+所以$T(n) = \Theta(lgn)$
+
+#### Example3
+
+$$
+T(n) = 3T(n/4) +nlgn
+$$
+
+$f(n) = nlgn = \Omega(n^{log_4^3}+\epsilon)$，其中$\epsilon ≈ 0.2$
+
+且$af(n/b) = 3f(n/4) = 3\frac{n}{4}lg{\frac{n}{4}}=\frac{3n}{4}(lgn-2)\leq cnlgn$
+
+当$c = \frac{3}{4}, n\geq 1$时成立。
+
+
 
