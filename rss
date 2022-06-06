@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 06 Jun 2022 01:25:16 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 06 Jun 2022 09:23:48 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -61,6 +61,13 @@
             <description><![CDATA[image-20220605154233378]]></description>
             <link>https://xinwuyun.github.io/算法/CH3：Growth of Functions_review.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH3：Growth of Functions_review.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>CH4：Recurrences</center>]]></title>
+            <description><![CDATA[Review：]]></description>
+            <link>https://xinwuyun.github.io/算法/CH4：Recurrences.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH4：Recurrences.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
