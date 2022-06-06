@@ -1,4 +1,8 @@
-# <center>CH2 算法入门</center>
+# 	<center>CH2 算法入门</center>
+
+## MindMap
+
+![image-20220605145111689](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220605145111689.png)
 
 排序问题：
 
@@ -334,3 +338,4 @@ T(n) = nlgn
 $$
 
 ![image-20220605133420731](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220605133420731.png)
+
