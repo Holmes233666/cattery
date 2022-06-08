@@ -89,8 +89,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="CH10&#xFF1A;Divide_and_Conquer&#xFF1A;More_Algorithms">
     
-    <link rel="prev" href="CH8&#xFF1A;Sorting in linear time.html">
+    
+    <link rel="prev" href="CH8&#xFF1A;Sorting_in_linear_time.html">
     
 
     <link href="https://xinwuyun.github.io/rss" title="xinwuyun" rel="alternate" type="application/rss+xml">
@@ -299,9 +301,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.9" data-path="CH8&#xFF1A;Sorting in linear time.html">
+        <li class="chapter " data-level="2.1.9" data-path="CH8&#xFF1A;Sorting_in_linear_time.html">
             
-                <a href="CH8&#xFF1A;Sorting in linear time.html">
+                <a href="CH8&#xFF1A;Sorting_in_linear_time.html">
             
                     
                     CH8&#xFF1A;Sorting in linear time
@@ -312,9 +314,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.10" data-path="CH9&#xFF1A;Medians and Order Statistics.html">
+        <li class="chapter active" data-level="2.1.10" data-path="CH9&#xFF1A;Medians_and_Order_Statistics.html">
             
-                <a href="CH9&#xFF1A;Medians and Order Statistics.html">
+                <a href="CH9&#xFF1A;Medians_and_Order_Statistics.html">
             
                     
                     CH9&#xFF1A;Medians and Order Statistics
@@ -324,6 +326,19 @@
 
             
         </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="CH10&#xFF1A;Divide_and_Conquer&#xFF1A;More_Algorithms">
+            
+                <span>
+            
+                    
+                    CH10&#xFF1A;Divide and Conquer&#xFF1A;More Algorithms
+            
+                
+            
+
+            
+        </span></li>
     
 
             </ul>
@@ -383,7 +398,7 @@
             processEscapes: true
         }
     });
-</script> </head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ch10&#xFF1A;medians-and-order-statistics"><b></b>CH10&#xFF1A;Medians and Order Statistics</a></li><ul><li><span class="title-icon "></span><a href="#91-order-statistics"><b></b>9.1 Order Statistics</a></li><ul><li><span class="title-icon "></span><a href="#911-&#x80CC;&#x666F;&#x4ECB;&#x7ECD;"><b></b>9.1.1 &#x80CC;&#x666F;&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#912-randomized-algorithm-for-finding-the-i-th-element-&#x968F;&#x673A;&#x7B97;&#x6CD5;"><b></b>9.1.2 Randomized algorithm for finding the i th element &#x968F;&#x673A;&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#913-&#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4F18;&#x5316;"><b></b>9.1.3 &#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4F18;&#x5316;</a></li></ul></ul></ul></div><a href="#ch10&#xFF1A;medians-and-order-statistics" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ch10&#xFF1A;medians-and-order-statistics"><a name="ch10&#xFF1A;medians-and-order-statistics" class="anchor-navigation-ex-anchor" href="#ch10&#xFF1A;medians-and-order-statistics"><i class="fa fa-link" aria-hidden="true"></i></a>CH10&#xFF1A;Medians and Order Statistics</h1>
+</script> </head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ch9&#xFF1A;medians-and-order-statistics"><b></b>CH9&#xFF1A;Medians and Order Statistics</a></li><ul><li><span class="title-icon "></span><a href="#91-order-statistics"><b></b>9.1 Order Statistics</a></li><ul><li><span class="title-icon "></span><a href="#911-&#x80CC;&#x666F;&#x4ECB;&#x7ECD;"><b></b>9.1.1 &#x80CC;&#x666F;&#x4ECB;&#x7ECD;</a></li><li><span class="title-icon "></span><a href="#912-randomized-algorithm-for-finding-the-i-th-element-&#x968F;&#x673A;&#x7B97;&#x6CD5;"><b></b>9.1.2 Randomized algorithm for finding the i th element &#x968F;&#x673A;&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#913-&#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4F18;&#x5316;"><b></b>9.1.3 &#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4F18;&#x5316;</a></li></ul></ul></ul></div><a href="#ch9&#xFF1A;medians-and-order-statistics" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ch9&#xFF1A;medians-and-order-statistics"><a name="ch9&#xFF1A;medians-and-order-statistics" class="anchor-navigation-ex-anchor" href="#ch9&#xFF1A;medians-and-order-statistics"><i class="fa fa-link" aria-hidden="true"></i></a>CH9&#xFF1A;Medians and Order Statistics</h1>
 <h2 id="91-order-statistics"><a name="91-order-statistics" class="anchor-navigation-ex-anchor" href="#91-order-statistics"><i class="fa fa-link" aria-hidden="true"></i></a>9.1 Order Statistics</h2>
 <h3 id="911-&#x80CC;&#x666F;&#x4ECB;&#x7ECD;"><a name="911-&#x80CC;&#x666F;&#x4ECB;&#x7ECD;" class="anchor-navigation-ex-anchor" href="#911-&#x80CC;&#x666F;&#x4ECB;&#x7ECD;"><i class="fa fa-link" aria-hidden="true"></i></a>9.1.1 &#x80CC;&#x666F;&#x4ECB;&#x7ECD;</h3>
 <p><strong>OrderStatistics &#x6392;&#x4F4D;&#x7EDF;&#x8BA1;</strong>&#xFF1A;&#x96C6;&#x5408;&#x4E2D;&#x7B2C;i&#x5C0F;&#x7684;&#x5143;&#x7D20;</p>
@@ -392,7 +407,7 @@
 <ul>
 <li>&#x6700;&#x5927;&#xFF1A;i = n</li>
 <li>&#x6700;&#x5C0F;&#xFF1A;i = 1</li>
-<li>&#x4E2D;&#x4F4D;&#x6570;<img src="CH10%EF%BC%9AMedians%20and%20Order%20Statistics.assets/image-20220608110311148.png" alt="image-20220608110311148" style="zoom:33%;"></li>
+<li>&#x4E2D;&#x4F4D;&#x6570;<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143214854.png" alt="image-20220608143214854" style="zoom:33%;"></li>
 </ul>
 <p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x591A;&#x5FEB;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF1F;</p>
 <ul>
@@ -404,12 +419,13 @@
 <h4 id="&#xFF08;1&#xFF09;&#x7B97;&#x6CD5;&#x601D;&#x8DEF;"><a name="&#xFF08;1&#xFF09;&#x7B97;&#x6CD5;&#x601D;&#x8DEF;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x7B97;&#x6CD5;&#x601D;&#x8DEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x7B97;&#x6CD5;&#x601D;&#x8DEF;</h4>
 <p>&#x7B97;&#x6CD5;&#x601D;&#x8DEF;&#xFF1A;</p>
 <ul>
-<li>&#x5229;&#x7528;&#x5E26;&#x6709;&#x968F;&#x673A;&#x7684;partition&#x7B97;&#x6CD5;&#x786E;&#x5B9A;pivot&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6309;&#x7167;pivot&#x4F4D;&#x7F6E;&#x548C;&#x8981;&#x627E;&#x7684;&#x5143;&#x7D20;&#x7684;&#x6392;&#x540D;&#x5BF9;&#x5BF9;&#x5E94;&#x7684;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x9012;&#x5F52;</li>
-<li><p><img src="CH10%EF%BC%9AMedians%20and%20Order%20Statistics.assets/image-20220608113344640.png" alt="image-20220608113344640" style="zoom:50%;"></p>
+<li><p>&#x5229;&#x7528;&#x5E26;&#x6709;&#x968F;&#x673A;&#x7684;partition&#x7B97;&#x6CD5;&#x786E;&#x5B9A;pivot&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6309;&#x7167;pivot&#x4F4D;&#x7F6E;&#x548C;&#x8981;&#x627E;&#x7684;&#x5143;&#x7D20;&#x7684;&#x6392;&#x540D;&#x5BF9;&#x5BF9;&#x5E94;&#x7684;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x9012;&#x5F52;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143235496.png" alt="image-20220608143235496"></p>
 </li>
 <li><p>&#x7EC8;&#x6B62;&#x6761;&#x4EF6;&#xFF1A;&#x533A;&#x95F4;&#x957F;&#x5EA6;&#x4E3A;1&#x6216;&#x8005;&#x662F;pivot&#x4F4D;&#x7F6E;&#x5C31;&#x662F;rank&#x4F4D;&#x7F6E;</p>
 </li>
-<li><strong>&#x9012;&#x5F52;&#x627E;&#x5DE6;&#x8FD8;&#x662F;&#x53F3;&#x4E0D;&#x8981;&#x641E;&#x9519;</strong></li>
+<li><p><strong>&#x9012;&#x5F52;&#x627E;&#x5DE6;&#x8FD8;&#x662F;&#x53F3;&#x4E0D;&#x8981;&#x641E;&#x9519;</strong></p>
+</li>
 </ul>
 <p>&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#xFF1A;</p>
 <pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">randomizedSelect</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; vec, <span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end, <span class="hljs-keyword">int</span> rank)</span> </span>{
@@ -428,7 +444,7 @@
 </code></pre>
 <h4 id="&#xFF08;2&#xFF09;&#x7B97;&#x6CD5;&#x5206;&#x6790;"><a name="&#xFF08;2&#xFF09;&#x7B97;&#x6CD5;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;&#x7B97;&#x6CD5;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;&#x7B97;&#x6CD5;&#x5206;&#x6790;</h4>
 <p>&#x6700;&#x574F;&#x60C5;&#x51B5;&#x4E0B;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;$T(n) = T(n-1) +\Theta(n) = \Theta(n^2)$</p>
-<p><img src="CH10%EF%BC%9AMedians%20and%20Order%20Statistics.assets/image-20220608114036082.png" alt="image-20220608114036082"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143314381.png" alt="image-20220608143314381"></p>
 <p>&#x4E0E;&#x5FEB;&#x6392;&#x533A;&#x522B;&#xFF0C;<strong>&#x5FEB;&#x6392;&#x662F;&#x4E24;&#x4E2A;&#x5B50;&#x95EE;&#x9898;</strong>&#x3002;</p>
 <h3 id="913-&#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4F18;&#x5316;"><a name="913-&#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4F18;&#x5316;" class="anchor-navigation-ex-anchor" href="#913-&#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4F18;&#x5316;"><i class="fa fa-link" aria-hidden="true"></i></a>9.1.3 &#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x4F18;&#x5316;</h3>
 <p>&#x5BF9;&#x4E8E;&#x5FEB;&#x6392;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x82E5;&#x627E;&#x4E2D;&#x503C;&#x662F;&#x7EBF;&#x6027;&#x5F00;&#x9500;&#xFF0C;&#x90A3;&#x4E48;&#xFF1A;
@@ -442,7 +458,7 @@ T(n) = 2T(n/2) + O(n) +O(n^2)
 </script></p>
 <hr>
 <p>&#x7EBF;&#x6027;&#x7684;&#x627E;&#x4E2D;&#x503C;&#xFF1A;</p>
-<p><img src="CH10%EF%BC%9AMedians%20and%20Order%20Statistics.assets/image-20220608114456739.png" alt="image-20220608114456739"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143326408.png" alt="image-20220608143326408"></p>
 <p>&#x6BCF;5&#x4E2A;&#x4E00;&#x7EC4;&#xFF0C;&#x5FEB;&#x901F;&#x901A;&#x8FC7;&#x76F4;&#x63A5;&#x63D2;&#x5165;&#x6392;&#x5E8F;&#x627E;&#x5230;&#x4E2D;&#x503C;&#xFF0C;&#x6BCF;&#x7EC4;&#x4E2D;&#x503C;&#x7684;&#x4E2D;&#x503C;&#x4F5C;&#x4E3A;pivot&#x3002;
 <script type="math/tex; mode=display">
 T(n) = T(n/5) + \Theta(n) + T(7n/10) = \Theta(n)
@@ -474,10 +490,14 @@ T(n) = T(n/5) + \Theta(n) + T(7n/10) = \Theta(n)
 
             
                 
-                <a href="CH8&#xFF1A;Sorting in linear time.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: CH8&#xFF1A;Sorting in linear time">
+                <a href="CH8&#xFF1A;Sorting_in_linear_time.html" class="navigation navigation-prev " aria-label="Previous page: CH8&#xFF1A;Sorting in linear time">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="CH10&#xFF1A;Divide_and_Conquer&#xFF1A;More_Algorithms" class="navigation navigation-next " aria-label="Next page: CH10&#xFF1A;Divide and Conquer&#xFF1A;More Algorithms">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -486,7 +506,7 @@ T(n) = T(n/5) + \Theta(n) + T(7n/10) = \Theta(n)
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CH9：Medians and Order Statistics","level":"2.1.10","depth":2,"previous":{"title":"CH8：Sorting in linear time","level":"2.1.9","depth":2,"path":"算法/CH8：Sorting in linear time.md","ref":"算法/CH8：Sorting in linear time.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","headscript","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","mathjax-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pluginsConfig":{"mathjax-pro":{"forceSVG":true}},"diff":{"type":"markdown","method":"diffChars","options":{}},"splitter":{},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"layout":{"scriptPath":"layouts/script.html"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"},"headscript":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"favicon":"/favicon.ico","appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconMore":{},"appleTouchIconPrecomposedMore":{}},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"type":"markdown","preset":"colorful","linkShape":"diagonal","autoFit":true,"style":{}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"算法/CH9：Medians and Order Statistics.md","mtime":"2022-06-08T03:51:13.419Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-08T03:51:41.213Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CH9：Medians and Order Statistics","level":"2.1.10","depth":2,"next":{"title":"CH10：Divide and Conquer：More Algorithms","level":"2.1.11","depth":2,"path":"算法/CH10：Divide_and_Conquer：More_Algorithms","ref":"算法/CH10：Divide_and_Conquer：More_Algorithms","articles":[]},"previous":{"title":"CH8：Sorting in linear time","level":"2.1.9","depth":2,"path":"算法/CH8：Sorting_in_linear_time.md","ref":"算法/CH8：Sorting_in_linear_time.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","headscript","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","mathjax-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pluginsConfig":{"mathjax-pro":{"forceSVG":true}},"diff":{"type":"markdown","method":"diffChars","options":{}},"splitter":{},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"layout":{"scriptPath":"layouts/script.html"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"},"headscript":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"favicon":"/favicon.ico","appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconMore":{},"appleTouchIconPrecomposedMore":{}},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"type":"markdown","preset":"colorful","linkShape":"diagonal","autoFit":true,"style":{}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"算法/CH9：Medians_and_Order_Statistics.md","mtime":"2022-06-08T06:36:19.529Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-08T06:36:47.859Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

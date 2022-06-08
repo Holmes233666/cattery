@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 08 Jun 2022 03:51:47 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Jun 2022 06:36:54 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -87,15 +87,15 @@
         <item>
             <title><![CDATA[CH8：Sorting in linear time]]></title>
             <description><![CDATA[Comparision Sort 比较排序：在排序的最终结果中，各元素的次序依赖于他们之间的<font color = "red">比较</font>。]]></description>
-            <link>https://xinwuyun.github.io/算法/CH8：Sorting in linear time.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH8：Sorting in linear time.html</guid>
+            <link>https://xinwuyun.github.io/算法/CH8：Sorting_in_linear_time.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH8：Sorting_in_linear_time.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[CH10：Medians and Order Statistics]]></title>
+            <title><![CDATA[CH9：Medians and Order Statistics]]></title>
             <description><![CDATA[OrderStatistics 排位统计：集合中第i小的元素]]></description>
-            <link>https://xinwuyun.github.io/算法/CH9：Medians and Order Statistics.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH9：Medians and Order Statistics.html</guid>
+            <link>https://xinwuyun.github.io/算法/CH9：Medians_and_Order_Statistics.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH9：Medians_and_Order_Statistics.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
