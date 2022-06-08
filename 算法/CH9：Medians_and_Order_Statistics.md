@@ -1,4 +1,4 @@
-# CH10：Medians and Order Statistics
+# CH9：Medians and Order Statistics
 
 ## 9.1 Order Statistics
 
@@ -12,7 +12,7 @@
 
 - 最大：i = n
 - 最小：i = 1
-- 中位数<img src="CH10%EF%BC%9AMedians%20and%20Order%20Statistics.assets/image-20220608110311148.png" alt="image-20220608110311148" style="zoom:33%;" />
+- 中位数<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143214854.png" alt="image-20220608143214854" style="zoom:33%;" />
 
 我们可以多快解决这个问题？
 
@@ -28,9 +28,11 @@
 算法思路：
 
 - 利用带有随机的partition算法确定pivot的位置，按照pivot位置和要找的元素的排名对对应的部分进行递归
-- <img src="CH10%EF%BC%9AMedians%20and%20Order%20Statistics.assets/image-20220608113344640.png" alt="image-20220608113344640" style="zoom:50%;" />
+
+  ![image-20220608143235496](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143235496.png)
 
 - 终止条件：区间长度为1或者是pivot位置就是rank位置
+
 - **递归找左还是右不要搞错**
 
 算法实现：
@@ -55,7 +57,7 @@ int randomizedSelect(vector<int>& vec, int start, int end, int rank) {
 
 最坏情况下时间复杂度：$T(n) = T(n-1) +\Theta(n) = \Theta(n^2)$
 
-![image-20220608114036082](CH10%EF%BC%9AMedians%20and%20Order%20Statistics.assets/image-20220608114036082.png)
+![image-20220608143314381](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143314381.png)
 
 与快排区别，**快排是两个子问题**。
 
@@ -75,7 +77,7 @@ $$
 
 线性的找中值：
 
-![image-20220608114456739](CH10%EF%BC%9AMedians%20and%20Order%20Statistics.assets/image-20220608114456739.png)
+![image-20220608143326408](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143326408.png)
 
 每5个一组，快速通过直接插入排序找到中值，每组中值的中值作为pivot。
 $$

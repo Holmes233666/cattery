@@ -10,3 +10,8 @@
 - [CH3：Growth of Functions](/算法/CH3：Growth_of_Functions.md)
 - [CH3：Growth of Functions_review](/算法/CH3：Growth_of_Functions_review.md)
 - [CH4：Recurrences](/算法/CH4：Recurrences.md)
+- [CH6：HeapSort](/算法/CH6：HeapSort.md)
+- [CH7：QuickSort](/算法/CH7：QuickSort.md)
+- [CH8：Sorting in linear time](/算法/CH8：Sorting_in_linear_time.md)
+- [CH9：Medians and Order Statistics](/算法/CH9：Medians_and_Order_Statistics.md)
+- [CH10：Divide and Conquer：More Algorithms](/算法/CH10：Divide_and_Conquer：More_Algorithms)
