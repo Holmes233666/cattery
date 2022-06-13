@@ -1,5 +1,9 @@
 # CH16：Greedy Algorithms
 
+MindMap：
+
+![CH16：Greedy Algorithm](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/CH16%EF%BC%9AGreedy%20Algorithm.png)
+
 DC---优化--->DP----->Greedy
 
 DP：有时overkill
@@ -243,7 +247,7 @@ double knapstack_recursive(vector<Item>& items, int capacity, vector<vector<doub
 
 定长编码和变长编码效率不同：
 
-![image-20220609110603135](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609110603135.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609110603135.png" alt="image-20220609110603135" style="zoom:50%;" />
 
 **![image-20220609110641796](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609110641796.png)**
 

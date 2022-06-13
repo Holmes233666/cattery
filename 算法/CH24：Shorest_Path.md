@@ -105,11 +105,11 @@ $$
 
 使用广度优先搜索，堆数据结构换为队列即可。
 
-![image-20220609160619997](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609160619997.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609160619997.png" alt="image-20220609160619997" style="zoom:50%;" />
 
 时间复杂度$Time=O(V+E)$
 
-![image-20220609161024581](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609161024581.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609161024581.png" alt="image-20220609161024581" style="zoom:50%;" />
 
 ### 24.2.4 Bellman-Ford
 
@@ -123,7 +123,7 @@ $$
 
 程序实现：
 
-![image-20220609161615633](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609161615633.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609161615633.png" alt="image-20220609161615633" style="zoom:50%;" />
 
 算法实现时，可以为遍历边的次序进行规定。按照次序利用每条边尝试进行松弛。
 
