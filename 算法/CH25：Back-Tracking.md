@@ -1,5 +1,9 @@
 # CH25：Back-Tracking
 
+MindMap：
+
+![CH26：Back-Tracking Algorithm](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/CH26%EF%BC%9ABack-Tracking%20Algorithm.png)
+
 ## 15.1 Back-Tracking Paradigm
 
 使用场景：无法使用最优子结构
