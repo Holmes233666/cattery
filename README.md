@@ -14,7 +14,11 @@
 - [CH7：QuickSort](/算法/CH7：QuickSort.md)
 - [CH8：Sorting in linear time](/算法/CH8：Sorting_in_linear_time.md)
 - [CH9：Medians and Order Statistics](/算法/CH9：Medians_and_Order_Statistics.md)
-- [CH10：Divide and Conquer：More Algorithms](/算法/CH10：Divide_and_Conquer：More_Algorithms)
+- [CH10：Divide and Conquer：More Algorithms](/算法/CH10：Divide_and_Conquer：More_Algorithms.md)
+- [CH15：Dynamic_Programming](/算法/CH15：Dynamic_Programming.md)
+- [CH16：Greedy_Algorithms](/算法/CH16：Greedy_Algorithms.md)
+- [CH24：Shorest_Path](/算法/CH24：Shorest_Path.md)
+- [CH25：Back-Tracking](/算法/CH25：Back-Tracking.md)
 
 [软件体系结构](/软件体系结构/about.md)
 
