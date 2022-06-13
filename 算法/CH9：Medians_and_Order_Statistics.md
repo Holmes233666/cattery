@@ -1,5 +1,9 @@
 # CH9：Medians and Order Statistics
 
+## MindMap
+
+![image-20220613115728740](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220613115728740.png)
+
 ## 9.1 Order Statistics
 
 ### 9.1.1 背景介绍
@@ -29,7 +33,7 @@
 
 - 利用带有随机的partition算法确定pivot的位置，按照pivot位置和要找的元素的排名对对应的部分进行递归
 
-  ![image-20220608143235496](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143235496.png)
+  <img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143235496.png" alt="image-20220608143235496" style="zoom:50%;" />
 
 - 终止条件：区间长度为1或者是pivot位置就是rank位置
 
@@ -57,7 +61,7 @@ int randomizedSelect(vector<int>& vec, int start, int end, int rank) {
 
 最坏情况下时间复杂度：$T(n) = T(n-1) +\Theta(n) = \Theta(n^2)$
 
-![image-20220608143314381](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143314381.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143314381.png" alt="image-20220608143314381" style="zoom:50%;" />
 
 与快排区别，**快排是两个子问题**。
 

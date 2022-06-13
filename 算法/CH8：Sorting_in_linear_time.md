@@ -16,7 +16,7 @@ $Sort<a_1,a_2,a_3,...,a_n>$
 
 算法的执行对应一条从根节点到叶子结点的路径，每个内部节点标识一次比较$a_i\leq a_j$。
 
-<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142727278.png" alt="image-20220608142727278" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142727278.png" alt="image-20220608142727278" style="zoom: 33%;" />
 
 树包含所有可能出现的结果。
 
@@ -46,7 +46,7 @@ $$
 
 辅助数组：C[1...k]
 
-![image-20220608142810187](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142810187.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142810187.png" alt="image-20220608142810187" style="zoom: 33%;" />
 
 算法思想：
 
@@ -84,7 +84,7 @@ vector<int> countingSort(vector<int>& vec, int k) {
 
 该算法如果输入的数据是小范围的，k不超过n，那么**时间复杂度为$\Theta(n)$，最坏情况下也是$\Theta(n)$**
 
-![image-20220608142842599](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142842599.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142842599.png" alt="image-20220608142842599" style="zoom:50%;" />
 
 #### （2）偏移考虑
 
@@ -118,7 +118,7 @@ void counting_sort2(vector<int>& vec, vector<int>& result, int start, int k) {
 
 最后一步填入结果数组时，从原数组的最后向前扫描，保证稳定性。
 
-![image-20220608142904243](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142904243.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142904243.png" alt="image-20220608142904243" style="zoom:50%;" />
 
 ## 8.3 Radix Sort 基数排序
 
@@ -128,7 +128,7 @@ Digit by Digit Sort：按位排序
 
 基数排序：**使用辅助数组的稳定排序**，首先对**最低有效位进行排序**
 
-![image-20220608142927092](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142927092.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142927092.png" alt="image-20220608142927092" style="zoom:50%;" />
 
 对每一位进行排序时使用的都是稳定排序，最后结果稳定。
 
@@ -169,13 +169,13 @@ counting sort 合适。
 
   常数时间
 
-![image-20220608142952537](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142952537.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608142952537.png" alt="image-20220608142952537" style="zoom:50%;" />
 
 ####  （2）算法实现
 
 实际实现时桶的数据结构需要考虑用链表数组来实现。首先给出伪代码：
 
-![image-20220608100627515](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608100627515.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608100627515.png" alt="image-20220608100627515" style="zoom:50%;" />
 
 ```cpp
 #include<iostream>

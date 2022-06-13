@@ -1,5 +1,7 @@
 # CH10：Divide and Conquer：More Algorithms
 
+![image-20220613140304515](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220613140304515.png)
+
 ## 10.1 Square matrix multiplication 矩阵相乘
 
 ### 10.1.1 分治算法
