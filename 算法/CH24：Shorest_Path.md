@@ -1,5 +1,9 @@
 # CH24：Shorest Path
 
+MindMap：
+
+![image-20220613200332691](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220613200332691.png)
+
 ## 24.1 定义
 
 最短路径问题：
