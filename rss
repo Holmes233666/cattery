@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 15 Jun 2022 06:03:51 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jun 2022 10:44:49 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -140,10 +140,24 @@
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[<center>CH1：Introduction</center>]]></title>
+            <description><![CDATA[Only one Point：软件体系结构的定义]]></description>
+            <link>https://xinwuyun.github.io/软件体系结构/CH1：Introduction.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH1：Introduction.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[<center>CH2：Achitecture Style</center>]]></title>
             <description><![CDATA[MindMap：]]></description>
             <link>https://xinwuyun.github.io/软件体系结构/CH2：Achitecture_Style.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH2：Achitecture_Style.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH3：软件体系结构建模和文档化]]></title>
+            <description><![CDATA[用例图：理解系统功能需求的宝贵工具]]></description>
+            <link>https://xinwuyun.github.io/软件体系结构/CH3：UML.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH3：UML.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
