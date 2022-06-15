@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 13 Jun 2022 12:12:56 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 15 Jun 2022 06:03:51 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -141,13 +141,13 @@
         </item>
         <item>
             <title><![CDATA[<center>CH2：Achitecture Style</center>]]></title>
-            <description><![CDATA[不存在统一的定义：]]></description>
+            <description><![CDATA[MindMap：]]></description>
             <link>https://xinwuyun.github.io/软件体系结构/CH2：Achitecture_Style.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH2：Achitecture_Style.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[<center>CH4：理解质量属性</center>]]></title>
             <description><![CDATA[质量属性场景：]]></description>
             <link>https://xinwuyun.github.io/软件体系结构/CH4：理解质量属性.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH4：理解质量属性.html</guid>
