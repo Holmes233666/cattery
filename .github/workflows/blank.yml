@@ -18,3 +18,4 @@ jobs:
         source_branch: main
         publish_cname: cattery.xinwuyun.cloud
         publish2_cname: cattery.sunyunqi.xyz 
+        publish_dir: /docs
