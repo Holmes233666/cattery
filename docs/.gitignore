@@ -4,7 +4,7 @@
 *.orig
 
 # Created by git when using merge tools for conflicts
-*.BACKUP.*
+*.BACKUP.* 
 *.BASE.*
 *.LOCAL.*
 *.REMOTE.*
