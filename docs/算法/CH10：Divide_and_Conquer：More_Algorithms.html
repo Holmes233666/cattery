@@ -1,0 +1,762 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CH10&#xFF1A;Divide and Conquer&#xFF1A;More Algorithms &#xB7; xinwuyun</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="xinwuyun">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CH15&#xFF1A;Dynamic_Programming.html">
+    
+    
+    <link rel="prev" href="CH9&#xFF1A;Medians_and_Order_Statistics.html">
+    
+
+    <link href="https://xinwuyun.github.io/rss" title="xinwuyun" rel="alternate" type="application/rss+xml">
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-precomposed-152.png">
+    
+    
+        
+    
+    
+        
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+<script type="text/x-mathjax-config">  
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        }
+    });
+</script> </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    &#x7B80;&#x4ECB;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x8F6F;&#x5DE5;&#x5927;&#x4E09;&#x4E0B;&#x7B14;&#x8BB0;</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    &#x7B97;&#x6CD5;&#x5206;&#x6790;&#x4E0E;&#x8BBE;&#x8BA1;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="CH1&#xFF1A;Introduction.html">
+            
+                <a href="CH1&#xFF1A;Introduction.html">
+            
+                    
+                    CH1&#xFF1A;Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;.html">
+            
+                <a href="CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;.html">
+            
+                    
+                    CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;_review.html">
+            
+                <a href="CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;_review.html">
+            
+                    
+                    CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;_review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="CH3&#xFF1A;Growth_of_Functions.html">
+            
+                <a href="CH3&#xFF1A;Growth_of_Functions.html">
+            
+                    
+                    CH3&#xFF1A;Growth of Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="CH3&#xFF1A;Growth_of_Functions_review.html">
+            
+                <a href="CH3&#xFF1A;Growth_of_Functions_review.html">
+            
+                    
+                    CH3&#xFF1A;Growth of Functions_review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="CH4&#xFF1A;Recurrences.html">
+            
+                <a href="CH4&#xFF1A;Recurrences.html">
+            
+                    
+                    CH4&#xFF1A;Recurrences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="CH6&#xFF1A;HeapSort.html">
+            
+                <a href="CH6&#xFF1A;HeapSort.html">
+            
+                    
+                    CH6&#xFF1A;HeapSort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="CH7&#xFF1A;QuickSort.html">
+            
+                <a href="CH7&#xFF1A;QuickSort.html">
+            
+                    
+                    CH7&#xFF1A;QuickSort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="CH8&#xFF1A;Sorting_in_linear_time.html">
+            
+                <a href="CH8&#xFF1A;Sorting_in_linear_time.html">
+            
+                    
+                    CH8&#xFF1A;Sorting in linear time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="CH9&#xFF1A;Medians_and_Order_Statistics.html">
+            
+                <a href="CH9&#xFF1A;Medians_and_Order_Statistics.html">
+            
+                    
+                    CH9&#xFF1A;Medians and Order Statistics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.11" data-path="CH10&#xFF1A;Divide_and_Conquer&#xFF1A;More_Algorithms.html">
+            
+                <a href="CH10&#xFF1A;Divide_and_Conquer&#xFF1A;More_Algorithms.html">
+            
+                    
+                    CH10&#xFF1A;Divide and Conquer&#xFF1A;More Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="CH15&#xFF1A;Dynamic_Programming.html">
+            
+                <a href="CH15&#xFF1A;Dynamic_Programming.html">
+            
+                    
+                    CH15&#xFF1A;Dynamic_Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.13" data-path="CH16&#xFF1A;Greedy_Algorithms.html">
+            
+                <a href="CH16&#xFF1A;Greedy_Algorithms.html">
+            
+                    
+                    CH16&#xFF1A;Greedy_Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="CH24&#xFF1A;Shorest_Path.html">
+            
+                <a href="CH24&#xFF1A;Shorest_Path.html">
+            
+                    
+                    CH24&#xFF1A;Shorest_Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="CH25&#xFF1A;Back-Tracking.html">
+            
+                <a href="CH25&#xFF1A;Back-Tracking.html">
+            
+                    
+                    CH25&#xFF1A;Back-Tracking
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/about.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/about.html">
+            
+                    
+                    &#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH1&#xFF1A;Introduction.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH1&#xFF1A;Introduction.html">
+            
+                    
+                    CH1&#xFF1A;Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH2&#xFF1A;Achitecture_Style.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH2&#xFF1A;Achitecture_Style.html">
+            
+                    
+                    CH2&#xFF1A;Achitecture_Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH3&#xFF1A;UML.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH3&#xFF1A;UML.html">
+            
+                    
+                    CH3&#xFF1A;UML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH4&#xFF1A;&#x7406;&#x89E3;&#x8D28;&#x91CF;&#x5C5E;&#x6027;.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH4&#xFF1A;&#x7406;&#x89E3;&#x8D28;&#x91CF;&#x5C5E;&#x6027;.html">
+            
+                    
+                    CH4&#xFF1A;&#x7406;&#x89E3;&#x8D28;&#x91CF;&#x5C5E;&#x6027;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH5&#xFF1A;ATMA.md">
+            
+                <span>
+            
+                    
+                    CH5&#xFF1A;ATMA
+            
+                
+            
+
+            
+        </span></li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="..">CH10&#xFF1A;Divide and Conquer&#xFF1A;More Algorithms</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head><script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+<script type="text/x-mathjax-config">  
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        }
+    });
+</script> </head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ch10&#xFF1A;divide-and-conquer&#xFF1A;more-algorithms"><b></b>CH10&#xFF1A;Divide and Conquer&#xFF1A;More Algorithms</a></li><ul><li><span class="title-icon "></span><a href="#101-square-matrix-multiplication-&#x77E9;&#x9635;&#x76F8;&#x4E58;"><b></b>10.1 Square matrix multiplication &#x77E9;&#x9635;&#x76F8;&#x4E58;</a></li><ul><li><span class="title-icon "></span><a href="#1011-&#x5206;&#x6CBB;&#x7B97;&#x6CD5;"><b></b>10.1.1 &#x5206;&#x6CBB;&#x7B97;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#1012-strassens-method"><b></b>10.1.2 Strassen&#x2019;s method</a></li></ul><li><span class="title-icon "></span><a href="#102-the-maximum---subarray-problem"><b></b>10.2 The Maximum - subarray problem</a></li><ul><li><span class="title-icon "></span><a href="#1021-&#x95EE;&#x9898;&#x80CC;&#x666F;"><b></b>10.2.1 &#x95EE;&#x9898;&#x80CC;&#x666F;</a></li><li><span class="title-icon "></span><a href="#1022-&#x66B4;&#x529B;&#x89E3;&#x6CD5;"><b></b>10.2.2 &#x66B4;&#x529B;&#x89E3;&#x6CD5;</a></li><li><span class="title-icon "></span><a href="#1023-&#x5206;&#x6CBB;&#x6CD5;"><b></b>10.2.3 &#x5206;&#x6CBB;&#x6CD5;</a></li></ul></ul></ul></div><a href="#ch10&#xFF1A;divide-and-conquer&#xFF1A;more-algorithms" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ch10&#xFF1A;divide-and-conquer&#xFF1A;more-algorithms"><a name="ch10&#xFF1A;divide-and-conquer&#xFF1A;more-algorithms" class="anchor-navigation-ex-anchor" href="#ch10&#xFF1A;divide-and-conquer&#xFF1A;more-algorithms"><i class="fa fa-link" aria-hidden="true"></i></a>CH10&#xFF1A;Divide and Conquer&#xFF1A;More Algorithms</h1>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220613140304515.png" alt="image-20220613140304515"></p>
+<h2 id="101-square-matrix-multiplication-&#x77E9;&#x9635;&#x76F8;&#x4E58;"><a name="101-square-matrix-multiplication-&#x77E9;&#x9635;&#x76F8;&#x4E58;" class="anchor-navigation-ex-anchor" href="#101-square-matrix-multiplication-&#x77E9;&#x9635;&#x76F8;&#x4E58;"><i class="fa fa-link" aria-hidden="true"></i></a>10.1 Square matrix multiplication &#x77E9;&#x9635;&#x76F8;&#x4E58;</h2>
+<h3 id="1011-&#x5206;&#x6CBB;&#x7B97;&#x6CD5;"><a name="1011-&#x5206;&#x6CBB;&#x7B97;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#1011-&#x5206;&#x6CBB;&#x7B97;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>10.1.1 &#x5206;&#x6CBB;&#x7B97;&#x6CD5;</h3>
+<p>$A = (a<em>{ij})&#xFF0C;B = (b</em>{ij})$&#xFF0C;&#x90FD;&#x662F;n&#xD7;n&#x7684;&#x77E9;&#x9635;</p>
+<p>&#x5B9A;&#x4E49;&#xFF1A; $C = A\times B, c<em>{ij} = \sum</em>{k=1}^{n}a<em>{i,k}b</em>{k,j}$</p>
+<p>&#x77E9;&#x9635;&#x76F8;&#x4E58;&#x7684;&#x7B97;&#x6CD5;&#xFF1A;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143746675.png" alt="image-20220608143746675" style="zoom:50%;"></p>
+<p>&#x5206;&#x6CBB;&#xFF1A;partition</p>
+<p>&#x77E9;&#x9635;&#x76F8;&#x4E58;&#x7B26;&#x5408;&#x6807;&#x91CF;&#x4E58;&#x6CD5;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608143901862.png" alt="image-20220608143901862" style="zoom:50%;"></p>
+<p>&#x77E9;&#x9635;&#x4E58;&#x6CD5;&#x7684;&#x5206;&#x6CBB;&#xFF1A;Square-Matrix-Multiply-Recursive(A,B)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608145329966.png" alt="image-20220608145329966" style="zoom: 50%;">
+<script type="math/tex; mode=display">
+T(n) = 8T(n/2) + (\frac{n}{2})^2\\
+f(n) = \Theta(n^2)\\
+n^{log_2^8} = n^3\\
+T(n) = O(n^3)
+</script>
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608150309071.png" alt="image-20220608150309071" style="zoom:33%;"></p>
+<h3 id="1012-strassens-method"><a name="1012-strassens-method" class="anchor-navigation-ex-anchor" href="#1012-strassens-method"><i class="fa fa-link" aria-hidden="true"></i></a>10.1.2 Strassen&#x2019;s method</h3>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608150547235.png" alt="image-20220608150547235" style="zoom:33%;"></p>
+<h2 id="102-the-maximum---subarray-problem"><a name="102-the-maximum---subarray-problem" class="anchor-navigation-ex-anchor" href="#102-the-maximum---subarray-problem"><i class="fa fa-link" aria-hidden="true"></i></a>10.2 The Maximum - subarray problem</h2>
+<h3 id="1021-&#x95EE;&#x9898;&#x80CC;&#x666F;"><a name="1021-&#x95EE;&#x9898;&#x80CC;&#x666F;" class="anchor-navigation-ex-anchor" href="#1021-&#x95EE;&#x9898;&#x80CC;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>10.2.1 &#x95EE;&#x9898;&#x80CC;&#x666F;</h3>
+<p>&#x8981;&#x6C42;&#x6700;&#x4F4E;&#x70B9;&#x4E70;&#x5165;&#xFF1F;&#x6700;&#x9AD8;&#x70B9;&#x5356;&#x51FA;&#xFF1F;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608150949929.png" alt="image-20220608150949929" style="zoom:50%;"></p>
+<p>&#x5EFA;&#x6A21;&#x4E3A;&#x6700;&#x548C;&#x5B50;&#x6570;&#x7EC4;&#x548C;&#x95EE;&#x9898;&#xFF1A;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608151033159.png" alt="image-20220608151033159" style="zoom:50%;"></p>
+<h3 id="1022-&#x66B4;&#x529B;&#x89E3;&#x6CD5;"><a name="1022-&#x66B4;&#x529B;&#x89E3;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#1022-&#x66B4;&#x529B;&#x89E3;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>10.2.2 &#x66B4;&#x529B;&#x89E3;&#x6CD5;</h3>
+<p>&#x66B4;&#x529B;&#x89E3;&#x6CD5;&#xFF1A;&#x7A77;&#x4E3E;&#x6240;&#x6709;&#x7684;&#x5B50;&#x6570;&#x7EC4;&#x2014;&#x2014;&#x7A77;&#x4E3E;&#x6240;&#x6709;&#x7684;&#x4E0B;&#x6807;&#x53EF;&#x80FD;&#x60C5;&#x51B5;&#xFF0C;&#x627E;&#x51FA;&#x6700;&#x5927;&#x503C;&#x7684;&#x5B50;&#x6570;&#x7EC4;.</p>
+<p>&#x66B4;&#x529B;&#x89E3;&#x6CD5;&#x7A0B;&#x5E8F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-cpp"><span class="hljs-comment">// &#x66B4;&#x529B;&#x7A77;&#x4E3E;&#x5B50;&#x6570;&#x7EC4; </span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">maxSum_brute</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; vec)</span> </span>{
+    <span class="hljs-keyword">int</span> maxSum = <span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">int</span> besti = <span class="hljs-number">-1</span>, bestj = <span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; vec.size(); i++) {
+        <span class="hljs-keyword">int</span> tempSum = vec[i];
+        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = i+<span class="hljs-number">1</span>; j &lt; vec.size(); j++) {
+            tempSum += vec[j];
+            <span class="hljs-keyword">if</span> (tempSum &gt; maxSum) {
+                maxSum = tempSum;
+                besti = i;
+                bestj = j;
+            }
+        }
+    }
+    <span class="hljs-keyword">return</span> maxSum;
+}
+</code></pre>
+<p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F;$O(n^2)$</p>
+<h3 id="1023-&#x5206;&#x6CBB;&#x6CD5;"><a name="1023-&#x5206;&#x6CBB;&#x6CD5;" class="anchor-navigation-ex-anchor" href="#1023-&#x5206;&#x6CBB;&#x6CD5;"><i class="fa fa-link" aria-hidden="true"></i></a>10.2.3 &#x5206;&#x6CBB;&#x6CD5;</h3>
+<p>&#x5206;&#x6CBB;&#x6CD5;&#x9700;&#x8981;&#x989D;&#x5916;&#x8003;&#x8651;&#x4E00;&#x4E2A;cross&#x7684;&#x60C5;&#x51B5;&#xFF1A;&#x6700;&#x4F18;&#x89E3;&#x53EF;&#x80FD;&#x662F;&#x5728;&#x4E24;&#x4E2A;&#x5B50;&#x6570;&#x7EC4;&#x7684;&#x4E2D;&#x95F4;&#x5F97;&#x5230;&#x3002;
+<script type="math/tex; mode=display">
+\begin{cases}二分\\n推n-1\end{cases}
+</script></p>
+<ul>
+<li>Divide&#xFF1A;&#x628A;&#x6570;&#x7EC4;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x6570;&#x7EC4;</li>
+<li>Conquer&#xFF1A;&#x9012;&#x5F52;&#x6C42;&#x89E3;&#x5B50;&#x95EE;&#x9898;&#xFF0C;&#x5E76;&#x989D;&#x5916;&#x6C42;&#x89E3;&#x8DE8;&#x8D8A;&#x4E2D;&#x95F4;&#x7684;&#x60C5;&#x51B5;</li>
+<li>Combine&#xFF1A;&#x4E09;&#x6311;&#x4E00;&#xFF0C;&#x627E;&#x5230;&#x6700;&#x5927;&#x548C;&#x5B50;&#x6570;&#x7EC4;</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220608153148962.png" alt="image-20220608153148962" style="zoom:50%;"></p>
+<p>&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-cpp"><span class="hljs-comment">// &#x5206;&#x6CBB;&#x6CD5;&#xFF0C;&#x542B;&#x6709;cross</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">getMidMax</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; vec, <span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end, <span class="hljs-keyword">int</span> mid)</span> </span>{
+    <span class="hljs-keyword">int</span> maxsum = vec[mid];
+    <span class="hljs-keyword">int</span> maxNum = vec[mid];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = mid - <span class="hljs-number">1</span>; i &gt;= start; i--) {
+        maxsum += vec[i];
+        <span class="hljs-keyword">if</span> (maxsum &gt; maxNum) {
+            maxNum = maxsum;
+        } 
+    }
+    maxsum = maxNum;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = mid + <span class="hljs-number">1</span>; i &lt;= end; i++) {
+        maxsum += vec[i];
+        <span class="hljs-keyword">if</span> (maxsum &gt; maxNum) {
+            maxNum = maxsum;
+        }
+    } 
+    <span class="hljs-keyword">return</span> maxNum;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">maxSum</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt;&amp; vec, <span class="hljs-keyword">int</span> start, <span class="hljs-keyword">int</span> end)</span> </span>{
+    <span class="hljs-keyword">if</span> (start == end) 
+        <span class="hljs-keyword">return</span> vec[start];
+    <span class="hljs-comment">// &#x5206; </span>
+    <span class="hljs-keyword">int</span> mid = (start + end) / <span class="hljs-number">2</span>;
+    <span class="hljs-comment">// &#x6CBB; </span>
+    <span class="hljs-keyword">int</span> maxSumLeft = maxSum(vec, start, mid);
+    <span class="hljs-keyword">int</span> maxSumRight = maxSum(vec, mid + <span class="hljs-number">1</span>, end);
+    <span class="hljs-keyword">int</span> maxSumCross = getMidMax(vec, start, end, mid);
+    <span class="hljs-comment">// &#x5408;&#x5E76; </span>
+    <span class="hljs-keyword">int</span> maxNum = max(maxSumLeft, maxSumRight);
+    maxNum = max(maxNum, maxSumCross);
+    <span class="hljs-keyword">return</span> maxNum;
+}
+</code></pre>
+<p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;$nlgn$</p>
+<p>$T(n) = 2T(n/2) + \Theta(n)$</p>
+<p>$f(n) = n^{log_2^2} = n = \Theta(nlg^0k)$</p>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CH9&#xFF1A;Medians_and_Order_Statistics.html" class="navigation navigation-prev " aria-label="Previous page: CH9&#xFF1A;Medians and Order Statistics">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CH15&#xFF1A;Dynamic_Programming.html" class="navigation navigation-next " aria-label="Next page: CH15&#xFF1A;Dynamic_Programming">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CH10：Divide and Conquer：More Algorithms","level":"2.1.11","depth":2,"next":{"title":"CH15：Dynamic_Programming","level":"2.1.12","depth":2,"path":"算法/CH15：Dynamic_Programming.md","ref":"算法/CH15：Dynamic_Programming.md","articles":[]},"previous":{"title":"CH9：Medians and Order Statistics","level":"2.1.10","depth":2,"path":"算法/CH9：Medians_and_Order_Statistics.md","ref":"算法/CH9：Medians_and_Order_Statistics.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","headscript","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","mathjax-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pluginsConfig":{"mathjax-pro":{"forceSVG":true}},"diff":{"type":"markdown","method":"diffChars","options":{}},"splitter":{},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"layout":{"scriptPath":"layouts/script.html"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"},"headscript":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"favicon":"/favicon.ico","appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconMore":{},"appleTouchIconPrecomposedMore":{}},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"type":"markdown","preset":"colorful","linkShape":"diagonal","autoFit":true,"style":{}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"算法/CH10：Divide_and_Conquer：More_Algorithms.md","mtime":"2022-06-15T14:52:38.174Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-15T14:53:09.282Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-rss/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simple-mind-map/bundle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+
