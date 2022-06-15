@@ -1,0 +1,846 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>CH16&#xFF1A;Greedy_Algorithms &#xB7; xinwuyun</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content>
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="xinwuyun">
+        
+        
+    
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-advanced-emoji/emoji-website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+    
+
+        
+    
+    
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CH24&#xFF1A;Shorest_Path.html">
+    
+    
+    <link rel="prev" href="CH15&#xFF1A;Dynamic_Programming.html">
+    
+
+    <link href="https://xinwuyun.github.io/rss" title="xinwuyun" rel="alternate" type="application/rss+xml">
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]};
+    </script>
+
+    
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    
+    
+    
+    
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-precomposed-152.png">
+    
+    
+        
+    
+    
+        
+    
+
+    
+    <link rel="stylesheet" href="../gitbook/gitbook-plugin-chart/c3/c3.min.css">
+    <script src="../gitbook/gitbook-plugin-chart/c3/d3.min.js"></script>
+    <script src="../gitbook/gitbook-plugin-chart/c3/c3.min.js"></script>
+    
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+<script type="text/x-mathjax-config">  
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        }
+    });
+</script> </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="&#x8F93;&#x5165;&#x5E76;&#x641C;&#x7D22;">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    &#x7B80;&#x4ECB;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">&#x8F6F;&#x5DE5;&#x5927;&#x4E09;&#x4E0B;&#x7B14;&#x8BB0;</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="about.html">
+            
+                <a href="about.html">
+            
+                    
+                    &#x7B97;&#x6CD5;&#x5206;&#x6790;&#x4E0E;&#x8BBE;&#x8BA1;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="CH1&#xFF1A;Introduction.html">
+            
+                <a href="CH1&#xFF1A;Introduction.html">
+            
+                    
+                    CH1&#xFF1A;Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;.html">
+            
+                <a href="CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;.html">
+            
+                    
+                    CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;_review.html">
+            
+                <a href="CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;_review.html">
+            
+                    
+                    CH2&#xFF1A;&#x7B97;&#x6CD5;&#x5165;&#x95E8;_review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="CH3&#xFF1A;Growth_of_Functions.html">
+            
+                <a href="CH3&#xFF1A;Growth_of_Functions.html">
+            
+                    
+                    CH3&#xFF1A;Growth of Functions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="CH3&#xFF1A;Growth_of_Functions_review.html">
+            
+                <a href="CH3&#xFF1A;Growth_of_Functions_review.html">
+            
+                    
+                    CH3&#xFF1A;Growth of Functions_review
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="CH4&#xFF1A;Recurrences.html">
+            
+                <a href="CH4&#xFF1A;Recurrences.html">
+            
+                    
+                    CH4&#xFF1A;Recurrences
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="CH6&#xFF1A;HeapSort.html">
+            
+                <a href="CH6&#xFF1A;HeapSort.html">
+            
+                    
+                    CH6&#xFF1A;HeapSort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="CH7&#xFF1A;QuickSort.html">
+            
+                <a href="CH7&#xFF1A;QuickSort.html">
+            
+                    
+                    CH7&#xFF1A;QuickSort
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="CH8&#xFF1A;Sorting_in_linear_time.html">
+            
+                <a href="CH8&#xFF1A;Sorting_in_linear_time.html">
+            
+                    
+                    CH8&#xFF1A;Sorting in linear time
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.10" data-path="CH9&#xFF1A;Medians_and_Order_Statistics.html">
+            
+                <a href="CH9&#xFF1A;Medians_and_Order_Statistics.html">
+            
+                    
+                    CH9&#xFF1A;Medians and Order Statistics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.11" data-path="CH10&#xFF1A;Divide_and_Conquer&#xFF1A;More_Algorithms.html">
+            
+                <a href="CH10&#xFF1A;Divide_and_Conquer&#xFF1A;More_Algorithms.html">
+            
+                    
+                    CH10&#xFF1A;Divide and Conquer&#xFF1A;More Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.12" data-path="CH15&#xFF1A;Dynamic_Programming.html">
+            
+                <a href="CH15&#xFF1A;Dynamic_Programming.html">
+            
+                    
+                    CH15&#xFF1A;Dynamic_Programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.1.13" data-path="CH16&#xFF1A;Greedy_Algorithms.html">
+            
+                <a href="CH16&#xFF1A;Greedy_Algorithms.html">
+            
+                    
+                    CH16&#xFF1A;Greedy_Algorithms
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.14" data-path="CH24&#xFF1A;Shorest_Path.html">
+            
+                <a href="CH24&#xFF1A;Shorest_Path.html">
+            
+                    
+                    CH24&#xFF1A;Shorest_Path
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.15" data-path="CH25&#xFF1A;Back-Tracking.html">
+            
+                <a href="CH25&#xFF1A;Back-Tracking.html">
+            
+                    
+                    CH25&#xFF1A;Back-Tracking
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/about.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/about.html">
+            
+                    
+                    &#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH1&#xFF1A;Introduction.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH1&#xFF1A;Introduction.html">
+            
+                    
+                    CH1&#xFF1A;Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH2&#xFF1A;Achitecture_Style.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH2&#xFF1A;Achitecture_Style.html">
+            
+                    
+                    CH2&#xFF1A;Achitecture_Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH3&#xFF1A;UML.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH3&#xFF1A;UML.html">
+            
+                    
+                    CH3&#xFF1A;UML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH4&#xFF1A;&#x7406;&#x89E3;&#x8D28;&#x91CF;&#x5C5E;&#x6027;.html">
+            
+                <a href="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH4&#xFF1A;&#x7406;&#x89E3;&#x8D28;&#x91CF;&#x5C5E;&#x6027;.html">
+            
+                    
+                    CH4&#xFF1A;&#x7406;&#x89E3;&#x8D28;&#x91CF;&#x5C5E;&#x6027;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../&#x8F6F;&#x4EF6;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;/CH5&#xFF1A;ATMA.md">
+            
+                <span>
+            
+                    
+                    CH5&#xFF1A;ATMA
+            
+                
+            
+
+            
+        </span></li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            &#x672C;&#x4E66;&#x4F7F;&#x7528; GitBook &#x53D1;&#x5E03;
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="..">CH16&#xFF1A;Greedy_Algorithms</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <html><head><script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.3/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>  
+<script type="text/x-mathjax-config">  
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [['$','$']],
+            processEscapes: true
+        }
+    });
+</script> </head><body><div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#ch16&#xFF1A;greedy-algorithms"><b></b>CH16&#xFF1A;Greedy Algorithms</a></li><ul><li><span class="title-icon "></span><a href="#161-activity-selection-problem"><b></b>16.1 Activity-Selection Problem</a></li><ul><li><span class="title-icon "></span><a href="#1611-&#x4F8B;&#x5B50;&#x5206;&#x6790;"><b></b>16.1.1 &#x4F8B;&#x5B50;&#x5206;&#x6790;</a></li><li><span class="title-icon "></span><a href="#1612-&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x5206;&#x6790;"><b></b>16.1.2 &#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x5206;&#x6790;</a></li></ul><li><span class="title-icon "></span><a href="#162-knapsack-problem"><b></b>16.2 Knapsack Problem</a></li><ul><li><span class="title-icon "></span><a href="#1621-fractional-knapsack"><b></b>16.2.1 Fractional Knapsack</a></li><li><span class="title-icon "></span><a href="#1622-0-1-knapsack-problem"><b></b>16.2.2 0-1 Knapsack Problem</a></li></ul><li><span class="title-icon "></span><a href="#163-huffman-codes"><b></b>16.3 Huffman codes</a></li><ul><li><span class="title-icon "></span><a href="#1631-&#x5E94;&#x7528;&#x80CC;&#x666F;"><b></b>16.3.1 &#x5E94;&#x7528;&#x80CC;&#x666F;</a></li><li><span class="title-icon "></span><a href="#1632-prefix-free-code"><b></b>16.3.2 Prefix-free Code</a></li></ul></ul></ul></div><a href="#ch16&#xFF1A;greedy-algorithms" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="ch16&#xFF1A;greedy-algorithms"><a name="ch16&#xFF1A;greedy-algorithms" class="anchor-navigation-ex-anchor" href="#ch16&#xFF1A;greedy-algorithms"><i class="fa fa-link" aria-hidden="true"></i></a>CH16&#xFF1A;Greedy Algorithms</h1>
+<p>MindMap&#xFF1A;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/CH16%EF%BC%9AGreedy%20Algorithm.png" alt="CH16&#xFF1A;Greedy Algorithm"></p>
+<p>DC---&#x4F18;&#x5316;---&gt;DP-----&gt;Greedy</p>
+<p>DP&#xFF1A;&#x6709;&#x65F6;overkill</p>
+<p>Greedy&#xFF1A;&#x8BA4;&#x51C6;&#x4E00;&#x79CD;</p>
+<h2 id="161-activity-selection-problem"><a name="161-activity-selection-problem" class="anchor-navigation-ex-anchor" href="#161-activity-selection-problem"><i class="fa fa-link" aria-hidden="true"></i></a>16.1 Activity-Selection Problem</h2>
+<p>&#x6D3B;&#x52A8;&#x96C6;&#x5408;&#xFF1A;$A = {a_1,a_2,...,a_n}$</p>
+<p>&#x4E0D;&#x540C;&#x7684;&#x6D3B;&#x52A8;&#x6301;&#x7EED;&#x65F6;&#x95F4;&#x4E0D;&#x540C;&#xFF0C;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x548C;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#xFF1A;$(s_i,f_i)\qquad 1\leq i\leq n$</p>
+<p>&#x76EE;&#x6807;&#xFF1A;&#x6700;&#x5927;&#x4E0D;&#x51B2;&#x7A81;&#x6D3B;&#x52A8;&#x96C6;&#x5408;   <strong>&quot;non-overlapping&quot; activities</strong></p>
+<ul>
+<li>Selection</li>
+</ul>
+<p><script type="math/tex; mode=display">
+\begin{cases}按结束时间排序√\\按开始时间排序？\end{cases}
+</script></p>
+<h3 id="1611-&#x4F8B;&#x5B50;&#x5206;&#x6790;"><a name="1611-&#x4F8B;&#x5B50;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#1611-&#x4F8B;&#x5B50;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>16.1.1 &#x4F8B;&#x5B50;&#x5206;&#x6790;</h3>
+<p>&#x82E5;&#x7A77;&#x4E3E;&#xFF1A;$2^n$&#x79CD;&#x9009;&#x62E9;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609093250908.png" alt="image-20220609093250908" style="zoom:50%;"></p>
+<h4 id="16111-&#x5206;&#x6CBB;"><a name="16111-&#x5206;&#x6CBB;" class="anchor-navigation-ex-anchor" href="#16111-&#x5206;&#x6CBB;"><i class="fa fa-link" aria-hidden="true"></i></a>16.1.1.1 &#x5206;&#x6CBB;</h4>
+<h5 id="&#xFF08;1&#xFF09;&#x4E8C;&#x5206;"><a name="&#xFF08;1&#xFF09;&#x4E8C;&#x5206;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x4E8C;&#x5206;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x4E8C;&#x5206;</h5>
+<p>$a<em>1,a_2,&#x2026;&#x2026;,a_k$|$a</em>{k+1},&#x2026;&#x2026;,a_n$</p>
+<p>&#x200B;              3                            4</p>
+<p>&#x200B;                            3+4 &#xFF1F;  &#x4E0D;&#x4E00;&#x5B9A;&#xFF0C;&#x53EF;&#x80FD;&#x51B2;&#x7A81;</p>
+<p>&#x4ECE;&#x5408;&#x5E76;&#x7684;&#x89D2;&#x5EA6;&#x770B;&#xFF0C;&#x4E24;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x4E0D;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#xFF0C;&#x53EF;&#x80FD;&#x51B2;&#x7A81;&#xFF0C;&#x65E0;&#x6CD5;&#x5408;&#x5E76;&#x3002;</p>
+<h5 id="&#xFF08;2&#xFF09;n&#x63A8;n-1"><a name="&#xFF08;2&#xFF09;n&#x63A8;n-1" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;n&#x63A8;n-1"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;n&#x63A8;n-1</h5>
+<p>&#x4E0E;&#x4E8C;&#x5206;&#x95EE;&#x9898;&#x76F8;&#x540C;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x51B2;&#x7A81;</p>
+<h5 id="&#xFF08;3&#xFF09;cross"><a name="&#xFF08;3&#xFF09;cross" class="anchor-navigation-ex-anchor" href="#&#xFF08;3&#xFF09;cross"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;3&#xFF09;cross</h5>
+<p>&#x9700;&#x8981;&#x5B50;&#x95EE;&#x9898;&#x63D0;&#x4F9B;&#x6240;&#x6709;&#x7684;&#x6700;&#x4F18;&#x89E3;&#xFF0C;&#x6B21;&#x4F18;&#x89E3;&#x2026;&#x2026;&#x89C4;&#x6A21;&#x5931;&#x63A7;</p>
+<h5 id="&#xFF08;4&#xFF09;&#x5EFA;&#x6A21;&#x5B50;&#x95EE;&#x9898;&#xFF1A;&#x6D3B;&#x52A8;&#x96C6;"><a name="&#xFF08;4&#xFF09;&#x5EFA;&#x6A21;&#x5B50;&#x95EE;&#x9898;&#xFF1A;&#x6D3B;&#x52A8;&#x96C6;" class="anchor-navigation-ex-anchor" href="#&#xFF08;4&#xFF09;&#x5EFA;&#x6A21;&#x5B50;&#x95EE;&#x9898;&#xFF1A;&#x6D3B;&#x52A8;&#x96C6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;4&#xFF09;&#x5EFA;&#x6A21;&#x5B50;&#x95EE;&#x9898;&#xFF1A;&#x6D3B;&#x52A8;&#x96C6;</h5>
+<p><script type="math/tex; mode=display">
+s_{ij} = \{a_k\in S: f_i\leq s_k<f_k\leq s_j\}
+</script></p>
+<p>&#x6D3B;&#x52A8;i&#x7ED3;&#x675F;&#x540E;&#x5F00;&#x59CB;&#xFF0C;&#x6D3B;&#x52A8;j&#x5F00;&#x59CB;&#x524D;&#x7ED3;&#x675F;&#x7684;&#x6D3B;&#x52A8;&#x96C6;&#x5408;&#x3002;</p>
+<p>&#x5C06;&#x6D3B;&#x52A8;&#x4F5C;&#x4E3A;&#x9694;&#x79BB;&#xFF1A;</p>
+<p>&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x96C6;&#x5408;$s<em>{0,n+1}$&#xFF0C;&#x5176;&#x4E2D;$s_0$&#x7684;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x4E3A;0&#x65F6;&#x523B;&#xFF0C;$s</em>{n+1}$&#x7684;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x4E3A;&#x65E0;&#x7A77;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609094800078.png" alt="image-20220609094800078"></p>
+<p>&#x6700;&#x7EC8;&#x7684;&#x7B54;&#x6848;&#x662F;$S_{0,n+1}$</p>
+<p>&#x4F7F;&#x7528;&#x67D0;&#x4E00;&#x4E2A;&#x6D3B;&#x52A8;&#x4F5C;&#x4E3A;&#x9694;&#x79BB;&#xFF0C;</p>
+<p>&#x4E2D;&#x95F4;&#x7684;&#x7EC8;&#x6B62;&#x6761;&#x4EF6;&#xFF1A;$s_{i,j}$&#x4E3A;&#x7A7A;&#xFF0C;&#x5982;&#xFF1A;a_i&#x7684;&#x7ED3;&#x675F;&#x6BD4;a_j&#x7684;&#x5F00;&#x59CB;&#x8981;&#x665A;</p>
+<p>$A<em>{i,j} = A</em>{i,k}\cup {a<em>k}\cup A</em>{k,j}$</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x7684;&#x503C;&#x53EF;&#x4EE5;&#x9012;&#x5F52;&#x5B9A;&#x4E49;&#x4E3A;&#xFF1A;
+<script type="math/tex; mode=display">
+c[i,j]=\begin{cases}0&&if\ S_{i,j}=\empty\\
+\max\limits_{i<k<j}{c[i,k]+c[k,j]+1}&& if S_{i,j}\neq \empty\end{cases}
+</script></p>
+<h4 id="16112-greedy"><a name="16112-greedy" class="anchor-navigation-ex-anchor" href="#16112-greedy"><i class="fa fa-link" aria-hidden="true"></i></a>16.1.1.2 Greedy</h4>
+<h5 id="&#xFF08;1&#xFF09;k&#x7684;&#x6311;&#x9009;"><a name="&#xFF08;1&#xFF09;k&#x7684;&#x6311;&#x9009;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;k&#x7684;&#x6311;&#x9009;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;k&#x7684;&#x6311;&#x9009;</h5>
+<p>&#x662F;&#x5426;&#x771F;&#x7684;&#x8981;&#x6311;&#x6240;&#x6709;&#x7684;k&#xFF1F;</p>
+<ul>
+<li>&#x51B2;&#x7A81;&#x7684;&#x6D3B;&#x52A8;&#x4E0D;&#x9700;&#x8981;&#x4F5C;&#x4E3A;k&#x8FDB;&#x884C;&#x6311;&#x9009;</li>
+<li>&#x95EE;&#x9898;&#x7279;&#x6B8A;&#x6027;&#xFF1A;&#x77E5;&#x9053;k=?&#x65F6;&#x6700;&#x4F18;&#xFF1F;</li>
+</ul>
+<p>&#x6700;&#x4F18;&#x89E3;&#x4E2D;&#x4E00;&#x5B9A;&#x5305;&#x542B;&#x7ED3;&#x675F;&#x6700;&#x65E9;&#x7684;&#x3002;&#x2014;&#x2014;&#x4E0D;&#x7528;&#x7A77;&#x4E3E;&#x6240;&#x6709;&#x7684;k&#xFF0C;&#x76F4;&#x63A5;&#x627E;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x6700;&#x65E9;&#x7684;&#x3002;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609100249053.png" alt="image-20220609100249053"></p>
+<h5 id="&#xFF08;2&#xFF09;&#x6C42;&#x89E3;&#x5B9E;&#x73B0;"><a name="&#xFF08;2&#xFF09;&#x6C42;&#x89E3;&#x5B9E;&#x73B0;" class="anchor-navigation-ex-anchor" href="#&#xFF08;2&#xFF09;&#x6C42;&#x89E3;&#x5B9E;&#x73B0;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;2&#xFF09;&#x6C42;&#x89E3;&#x5B9E;&#x73B0;</h5>
+<ul>
+<li>&#x9012;&#x5F52;&#x5B9E;&#x73B0;</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609100759740.png" alt="image-20220609100759740"></p>
+<p>&#x6CA1;&#x6709;&#x8981;&#x548C;j&#x6BD4;&#x7684;&#xFF0C;aj&#x7684;&#x5F00;&#x59CB;&#x65F6;&#x95F4;&#x662F;&#x65E0;&#x7A77;&#x5927;&#xFF0C;&#x80AF;&#x5B9A;&#x6EE1;&#x8DB3;&#x3002;</p>
+<ul>
+<li>&#x8FED;&#x4EE3;&#x5B9E;&#x73B0;</li>
+</ul>
+<p>&#x6309;&#x7167;&#x7ED3;&#x675F;&#x65F6;&#x95F4;&#x6392;&#x5E8F;&#xFF0C;&#x8FDB;&#x884C;&#x626B;&#x63CF;&#x5373;&#x53EF;&#x3002;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609101214110.png" alt="image-20220609101214110"></p>
+<p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E3A;$O(n)$</p>
+<pre><code class="lang-cpp"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">iterate_AS</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;Activity&gt; acts, <span class="hljs-built_in">vector</span>&lt;Activity&gt;&amp; res)</span> </span>{
+    sort(acts.begin(), acts.end(), Activity::cmp);
+    res.push_back(acts[<span class="hljs-number">0</span>]);
+    <span class="hljs-keyword">int</span> last_act = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; acts.size(); i++) {
+        <span class="hljs-keyword">if</span> (acts[i].start &gt;= acts[last_act].end) {
+            res.push_back(acts[i]);
+            last_act = i;
+        }
+    }
+}
+</code></pre>
+<h3 id="1612-&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x5206;&#x6790;"><a name="1612-&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#1612-&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>16.1.2 &#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x5206;&#x6790;</h3>
+<p>&#x8D2A;&#x5FC3;&#x7B56;&#x7565;&#x4F55;&#x65F6;&#x6EE1;&#x8DB3;&#xFF1A;</p>
+<ul>
+<li>Greedy Choice property <strong>&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x5168;&#x5C40;&#x6700;&#x4F18;&#x89E3;&#x80FD;&#x591F;&#x901A;&#x8FC7;&#x8BE5;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x89E3;&#x5F97;&#x5230;</strong></li>
+<li>Optimal subtructure <strong>&#x4E00;&#x4E2A;&#x95EE;&#x9898;&#x4E00;&#x5B9A;&#x4F7F;&#x7528;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;</strong></li>
+</ul>
+<h2 id="162-knapsack-problem"><a name="162-knapsack-problem" class="anchor-navigation-ex-anchor" href="#162-knapsack-problem"><i class="fa fa-link" aria-hidden="true"></i></a>16.2 Knapsack Problem</h2>
+<p><script type="math/tex; mode=display">
+\begin{cases}0-1背包：要么拿，要么不拿，穷举2^n种可能性\\
+分数背包：拿多少，穷举可能性为无穷大\end{cases}
+</script></p>
+<p>&#x6700;&#x4F18;&#x5B50;&#x7ED3;&#x6784;&#x7684;&#x5224;&#x5B9A;&#xFF1A;&#x662F;&#x5426;&#x4E00;&#x5B9A;&#x4F7F;&#x7528;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#xFF1F;</p>
+<p>&#x5B50;&#x95EE;&#x9898;&#xFF1A;&#x662F;&#x5426;&#x5269;&#x4E0B;&#x7684;&#x5BB9;&#x91CF;&#x4E00;&#x5B9A;&#x7528;&#x5176;&#x6700;&#x5927;&#x4EF7;&#x503C;&#xFF1F;&#x662F;  </p>
+<p>&#x2014;&#x2014;&#x6EE1;&#x8DB3;&#x6700;&#x4F18;&#x5B50;&#x7ED3;&#x6784;&#xFF0C;&#x63A8;&#x7ED9;&#x5B50;&#x95EE;&#x9898;&#x3002;</p>
+<h3 id="1621-fractional-knapsack"><a name="1621-fractional-knapsack" class="anchor-navigation-ex-anchor" href="#1621-fractional-knapsack"><i class="fa fa-link" aria-hidden="true"></i></a>16.2.1 Fractional Knapsack</h3>
+<p>&#x65E0;&#x6CD5;&#x63A8;&#x7ED9;&#x5B50;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x6700;&#x4F18;&#x89E3;&#x4E00;&#x5B9A;&#x88C5;&#x6EE1;&#x6027;&#x4EF7;&#x6BD4;&#x6700;&#x9AD8;&#x7684;&#x3002;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609102149983.png" alt="image-20220609102149983"></p>
+<h3 id="1622-0-1-knapsack-problem"><a name="1622-0-1-knapsack-problem" class="anchor-navigation-ex-anchor" href="#1622-0-1-knapsack-problem"><i class="fa fa-link" aria-hidden="true"></i></a>16.2.2 0-1 Knapsack Problem</h3>
+<h4 id="&#xFF08;1&#xFF09;&#x5206;&#x6CBB;&#x601D;&#x8DEF;&#x5206;&#x6790;"><a name="&#xFF08;1&#xFF09;&#x5206;&#x6CBB;&#x601D;&#x8DEF;&#x5206;&#x6790;" class="anchor-navigation-ex-anchor" href="#&#xFF08;1&#xFF09;&#x5206;&#x6CBB;&#x601D;&#x8DEF;&#x5206;&#x6790;"><i class="fa fa-link" aria-hidden="true"></i></a>&#xFF08;1&#xFF09;&#x5206;&#x6CBB;&#x601D;&#x8DEF;&#x5206;&#x6790;</h4>
+<p>&#x5BFB;&#x627E;&#x89C4;&#x6A21;&#x538B;&#x7F29;&#x7684;&#x65B9;&#x6CD5;
+<script type="math/tex; mode=display">
+规模\begin{cases}背包的容量\\物品的数量\end{cases}\qquad 任何一个减少都是规模压缩
+</script>
+&#x601D;&#x8DEF;&#xFF1A;</p>
+<p>&#x2460; &#x4E8C;&#x5206;&#x5BB9;&#x91CF;&#x548C;&#x7269;&#x54C1;&#xFF1A;&#x7ECF;&#x5E38;&#x4E0D;&#x5BF9;&#xFF0C;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x60C5;&#x51B5;&#x592A;&#x591A;</p>
+<p>&#x2461; n&#x63A8;n-1</p>
+<p>&#x90A3;&#x4E48;&#x63A8;&#x7ED9;&#x5B50;&#x95EE;&#x9898;&#x6709;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;
+<script type="math/tex; mode=display">
+\begin{cases}容量全给子问题\\容量自己留一部分，剩余部分给子问题\end{cases}
+</script>
+<strong>&#x5B50;&#x95EE;&#x9898;&#x9012;&#x5F52;&#x6C42;&#x89E3;</strong></p>
+<p>&#x6700;&#x4F18;&#x89E3;&#x7684;&#x503C;&#xFF1A;&#x80FD;&#x5F97;&#x5230;&#x7684;&#x6700;&#x5927;&#x4EF7;&#x503C;&#xFF1A;</p>
+<p>$c[i,j]&#xFF1A;&#x524D;i&#x4E2A;&#x7269;&#x54C1;&#xFF0C;&#x80CC;&#x5305;&#x5BB9;&#x91CF;&#x4E3A;j$&#xFF1A;
+<script type="math/tex; mode=display">
+c[i,j] = max(c[i-1, j], c[i-1,j-w[i]] + v[i])
+</script>
+&#x5BF9;&#x7269;&#x54C1;&#x7684;&#x987A;&#x5E8F;&#x65E0;&#x8981;&#x6C42;&#xFF0C;&#x5B9E;&#x9645;&#x903B;&#x8F91;&#x5C31;&#x662F;&#x8981;<strong>&#x5217;&#x4E3E;&#x6BCF;&#x4E2A;&#x7269;&#x54C1;&#x88C5;&#x5165;&#x6216;&#x8005;&#x4E0D;&#x88C5;&#x5165;</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609103345542.png" alt="image-20220609103345542"></p>
+<p><strong>&#x5B9E;&#x9645;&#x4E0A;&#x9012;&#x5F52;&#x6BD4;&#x4E24;&#x4E2A;for&#x8981;&#x5FEB;&#xFF0C;&#xFF1A;&#x53EA;&#x4F1A;&#x8C03;&#x90E8;&#x5206;&#xFF0C;&#x4E0D;&#x662F;&#x6240;&#x6709;&#x7684;&#x5B50;&#x95EE;&#x9898;&#x90FD;&#x8981;&#x8BA1;&#x7B97;&#x3002;</strong></p>
+<p>&#x521D;&#x59CB;&#x7684;&#x6761;&#x4EF6;&#xFF1A;&#x80CC;&#x5305;&#x5BB9;&#x91CF;&#x4E3A;&#x7A7A;&#x548C;&#x53EF;&#x9009;&#x7269;&#x54C1;&#x4E3A;&#x7A7A;&#x65F6;&#xFF0C;&#x4EE3;&#x4EF7;&#x5747;&#x4E3A;0</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609103808065.png" alt="image-20220609103808065"></p>
+<pre><code class="lang-cpp"><span class="hljs-comment">// 0-1&#x80CC;&#x5305;&#xFF0C;&#x9012;&#x5F52;&#x6C42;&#x89E3;&#x524D;item_num&#x4E2A;&#x7269;&#x54C1;&#x5728;&#x80CC;&#x5305;&#x5BB9;&#x91CF;&#x4E3A;capacity&#x65F6;&#x7684;&#x6700;&#x5927;&#x4EF7;&#x503C;</span>
+<span class="hljs-comment">// &#x4F7F;&#x7528;&#x5907;&#x5FD8;&#x5F55;</span>
+<span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">knapstack_dp</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;Item&gt;&amp; items, <span class="hljs-keyword">int</span> item_num, <span class="hljs-keyword">int</span> capacity, <span class="hljs-built_in">vector</span>&lt;<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">double</span>&gt;&gt;&amp; result, <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">bool</span>&gt;&amp; choose)</span> </span>{
+    <span class="hljs-comment">// &#x67E5;&#x770B;&#x5907;&#x5FD8;&#x5F55;</span>
+    <span class="hljs-keyword">if</span>(result[item_num][capacity] != <span class="hljs-number">-99999</span>) {
+        <span class="hljs-keyword">return</span> result[item_num][capacity];
+    }
+    <span class="hljs-comment">// &#x5F53;&#x524D;&#x7269;&#x54C1;&#x7684;&#x91CD;&#x91CF;&#x5DF2;&#x7ECF;&#x8D85;&#x8FC7;&#x80CC;&#x5305;&#x5BB9;&#x91CF;&#xFF0C;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x7ED9;&#x5B50;&#x95EE;&#x9898;</span>
+    <span class="hljs-keyword">if</span>(items[item_num<span class="hljs-number">-1</span>].weight &gt; capacity) {
+        result[item_num][capacity] = knapstack_dp(items, item_num<span class="hljs-number">-1</span>, capacity, result, choose); <span class="hljs-comment">// &#x6253;&#x5907;&#x5FD8;&#x5F55;</span>
+        choose[item_num - <span class="hljs-number">1</span>] = <span class="hljs-literal">false</span>;
+        <span class="hljs-keyword">return</span> knapstack_dp(items, item_num<span class="hljs-number">-1</span>, capacity, result, choose);    <span class="hljs-comment">// &#x8FD4;&#x56DE;</span>
+    }
+    <span class="hljs-comment">// &#x5426;&#x5219;&#x4E24;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x4E2D;&#x6311;&#x51FA;&#x66F4;&#x4F18;&#x7684;</span>
+    <span class="hljs-keyword">double</span> with_now = knapstack_dp(items, item_num - <span class="hljs-number">1</span>, capacity - items[item_num<span class="hljs-number">-1</span>].weight, result, choose) + items[item_num<span class="hljs-number">-1</span>].value;        <span class="hljs-comment">// &#x88C5;&#x5165;&#x5F53;&#x524D;&#x7684;&#x7269;&#x54C1;</span>
+    <span class="hljs-keyword">double</span> without_now = knapstack_dp(items, item_num - <span class="hljs-number">1</span>, capacity, result, choose);    <span class="hljs-comment">// &#x4E0D;&#x88C5;&#x5F53;&#x524D;&#x7684;&#x7269;&#x54C1;</span>
+    <span class="hljs-comment">// &#x4E8C;&#x6311;&#x4E00;</span>
+    <span class="hljs-keyword">if</span>(with_now &gt;= without_now) {
+        result[item_num][capacity] = with_now;
+        choose[item_num - <span class="hljs-number">1</span>] = <span class="hljs-literal">true</span>;
+    }<span class="hljs-keyword">else</span>{
+        result[item_num][capacity] = without_now;
+        choose[item_num - <span class="hljs-number">1</span>] = <span class="hljs-literal">false</span>;
+    }
+    <span class="hljs-keyword">return</span> result[item_num][capacity];
+}
+
+<span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x5907;&#x5FD8;&#x5F55;</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">init_memoization</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">double</span>&gt;&gt;&amp; result, <span class="hljs-keyword">int</span> item_num, <span class="hljs-keyword">int</span> capacity)</span> </span>{
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt;= item_num; i++) {   <span class="hljs-comment">// &#x80CC;&#x5305;&#x5BB9;&#x91CF;&#x4E3A;0&#x65F6;&#xFF0C;&#x6700;&#x5927;&#x4EF7;&#x503C;&#x4E3A;0</span>
+        result[i][<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+    }
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= capacity; j++) {    <span class="hljs-comment">// &#x7269;&#x54C1;&#x6570;&#x91CF;&#x4E3A;0&#x65F6;&#xFF0C;&#x6700;&#x5927;&#x4EF7;&#x503C;&#x4E3A;0</span>
+        result[<span class="hljs-number">0</span>][j] = <span class="hljs-number">0</span>;
+    }
+}
+
+<span class="hljs-function"><span class="hljs-keyword">double</span> <span class="hljs-title">knapstack_recursive</span><span class="hljs-params">(<span class="hljs-built_in">vector</span>&lt;Item&gt;&amp; items, <span class="hljs-keyword">int</span> capacity, <span class="hljs-built_in">vector</span>&lt;<span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">double</span>&gt;&gt;&amp; result, <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">bool</span>&gt;&amp; choose)</span> </span>{
+    init_memoization(result, items.size(), capacity);   <span class="hljs-comment">// &#x521D;&#x59CB;&#x5316;&#x8868;&#x683C;</span>
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= items.size(); i++) {
+        <span class="hljs-keyword">for</span> ( <span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt;= capacity; j++) {
+            <span class="hljs-keyword">if</span> (j &gt;= items[i<span class="hljs-number">-1</span>].weight &amp;&amp; result[i<span class="hljs-number">-1</span>][j - items[i<span class="hljs-number">-1</span>].weight] + items[i<span class="hljs-number">-1</span>].value &gt; result[i<span class="hljs-number">-1</span>][j]) {
+                choose[i<span class="hljs-number">-1</span>] = <span class="hljs-literal">true</span>;
+                result[i][j] = result[i<span class="hljs-number">-1</span>][j - items[i<span class="hljs-number">-1</span>].weight] + items[i<span class="hljs-number">-1</span>].value;
+            }<span class="hljs-keyword">else</span>{
+                choose[i<span class="hljs-number">-1</span>] = <span class="hljs-literal">false</span>;
+                result[i][j] = result[i<span class="hljs-number">-1</span>][j];
+            }
+        }
+    }
+    <span class="hljs-keyword">return</span> result[items.size()][capacity];
+}
+</code></pre>
+<h2 id="163-huffman-codes"><a name="163-huffman-codes" class="anchor-navigation-ex-anchor" href="#163-huffman-codes"><i class="fa fa-link" aria-hidden="true"></i></a>16.3 Huffman codes</h2>
+<h3 id="1631-&#x5E94;&#x7528;&#x80CC;&#x666F;"><a name="1631-&#x5E94;&#x7528;&#x80CC;&#x666F;" class="anchor-navigation-ex-anchor" href="#1631-&#x5E94;&#x7528;&#x80CC;&#x666F;"><i class="fa fa-link" aria-hidden="true"></i></a>16.3.1 &#x5E94;&#x7528;&#x80CC;&#x666F;</h3>
+<p>&#x5B9A;&#x957F;&#x7F16;&#x7801;&#x548C;&#x53D8;&#x957F;&#x7F16;&#x7801;&#x6548;&#x7387;&#x4E0D;&#x540C;&#xFF1A;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609110603135.png" alt="image-20220609110603135" style="zoom:50%;"></p>
+<p><strong><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609110641796.png" alt="image-20220609110641796"></strong></p>
+<h3 id="1632-prefix-free-code"><a name="1632-prefix-free-code" class="anchor-navigation-ex-anchor" href="#1632-prefix-free-code"><i class="fa fa-link" aria-hidden="true"></i></a>16.3.2 Prefix-free Code</h3>
+<p>&#x65E0;&#x524D;&#x7F00;&#x7801;&#xFF0C;&#x89E3;&#x7801;&#x7ED3;&#x679C;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;</p>
+<p>&#x54C8;&#x592B;&#x66FC;&#x7F16;&#x7801;&#x7684;&#x6C42;&#x89E3;&#x8FC7;&#x7A0B;&#xFF1A;</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609111025205.png" alt="image-20220609111025205"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609111142674.png" alt="image-20220609111142674"></p>
+<script type="text/javascript">var targetUl = document.getElementsByClassName('page-inner')[0].getElementsByTagName('ul')[0];if(targetUl.getElementsByTagName('a').length>0){targetUl.className='toc';}</script></body></html>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CH15&#xFF1A;Dynamic_Programming.html" class="navigation navigation-prev " aria-label="Previous page: CH15&#xFF1A;Dynamic_Programming">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CH24&#xFF1A;Shorest_Path.html" class="navigation navigation-next " aria-label="Next page: CH24&#xFF1A;Shorest_Path">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CH16：Greedy_Algorithms","level":"2.1.13","depth":2,"next":{"title":"CH24：Shorest_Path","level":"2.1.14","depth":2,"path":"算法/CH24：Shorest_Path.md","ref":"算法/CH24：Shorest_Path.md","articles":[]},"previous":{"title":"CH15：Dynamic_Programming","level":"2.1.12","depth":2,"path":"算法/CH15：Dynamic_Programming.md","ref":"算法/CH15：Dynamic_Programming.md","articles":[]},"dir":"ltr"},"config":{"plugins":["toc","headscript","-lunr","-search","search-plus","splitter","-sharing","sharing-plus","expandable-chapters-small","anchor-navigation-ex","edit-link-plus","code","chart","favicon-absolute","github-buttons","advanced-emoji","rss","diff","simple-mind-map","hide-element","audio_image","mermaid-gb3","mathjax-pro"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"pluginsConfig":{"mathjax-pro":{"forceSVG":true}},"diff":{"type":"markdown","method":"diffChars","options":{}},"splitter":{},"copyright":{"site":"https://xinwuyun.github.io/","author":"xinwuyun","website":"xinwuyun","copyProtect":false},"toc":{"addClass":true,"className":"toc"},"layout":{"scriptPath":"layouts/script.html"},"edit-link-plus":{"label":"编辑本页","base":{"xinwuyun.github.io":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"},"defaultBase":"https://github.com/xinwuyun/xinwuyun.github.io/edit/main"},"headscript":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"favicon-absolute":{"favicon":"/favicon.ico","appleTouchIconPrecomposed152":"/apple-touch-icon-precomposed-152.png","appleTouchIconMore":{},"appleTouchIconPrecomposedMore":{}},"sitemap-general":{"prefix":"https://xinwuyun.github.io/"},"hide-element":{"elements":["a.gitbook-link[href='https://www.gitbook.com']"]},"fontsettings":{"theme":"white","family":"sans","size":2},"rss":{"categories":["markdown","git","github","gitbook","java","php"],"title":"xinwuyun","description":"xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io","author":"xinwuyun","site_url":"https://xinwuyun.github.io/","feed_url":"https://xinwuyun.github.io/rss","managingEditor":"zrwangxdu@outlook.com","webMaster":"zrwangxdu@outlook.com"},"audio_image":{},"highlight":{},"mermaid-gb3":{},"anchor-navigation-ex":{"showLevel":false,"associatedWithSummary":true,"mode":"float","showGoTop":true,"printLog":false,"multipleH1":true,"float":{"floatIcon":"fa fa-navicon","showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""},"pageTop":{"showLevelIcon":false,"level1Icon":"","level2Icon":"","level3Icon":""}},"github-buttons":{"buttons":[{"user":"xinwuyun","repo":"xinwuyun.github.io","type":"star","size":"small"}]},"mathjax-pro":{"forceSVG":false,"version":"2.7.7"},"expandable-chapters-small":{},"mygitalk":{"clientID":"c1986de36a48f4a8fe0e","clientSecret":"7ebea379f5c29ef2def4e1307590f8ef34039d10","repo":"xinwuyun.github.io","owner":"xinwuyun","admin":["xinwuyun"],"distractionFreeMode":false},"advanced-emoji":{"embedEmojis":false},"sharing":{"qq":true,"all":["facebook","google","twitter","weibo","instapaper","linkedin","pocket","stumbleupon"],"douban":true,"facebook":false,"weibo":true,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":true,"linkedin":false},"simple-mind-map":{"type":"markdown","preset":"colorful","linkShape":"diagonal","autoFit":true,"style":{}},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"chart":{"type":"c3"},"search-plus":{}},"theme":"default","author":"xinwuyun","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xinwuyun","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"xinwuyun 搭建的 Gitbook 个人博客,详情请访问 https://xinwuyun.github.io/"},"file":{"path":"算法/CH16：Greedy_Algorithms.md","mtime":"2022-06-15T14:57:25.016Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-06-15T14:57:53.232Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link-plus/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-rss/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-simple-mind-map/bundle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-mathjax-pro/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="../gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
+
+    </body>
+</html>
+

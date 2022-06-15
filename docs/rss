@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[xinwuyun]]></title>
+        <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
+        <link>https://xinwuyun.github.io/</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Wed, 15 Jun 2022 14:58:01 GMT</lastBuildDate>
+        <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[xinwuyun]]></author>
+        <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
+        <webMaster><![CDATA[zrwangxdu@outlook.com]]></webMaster>
+        <category><![CDATA[markdown]]></category>
+        <category><![CDATA[git]]></category>
+        <category><![CDATA[github]]></category>
+        <category><![CDATA[gitbook]]></category>
+        <category><![CDATA[java]]></category>
+        <category><![CDATA[php]]></category>
+        <item>
+            <title><![CDATA[Summary]]></title>
+            <description><![CDATA[算法分析与设计笔记]]></description>
+            <link>https://xinwuyun.github.io/</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/算法/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/about.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH1：Introduction]]></title>
+            <description><![CDATA[Concept：A well-Defined computational procedure that takes some value, or set of values, as input and proceduces some value, or set of values, as output.]]></description>
+            <link>https://xinwuyun.github.io/算法/CH1：Introduction.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH1：Introduction.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>CH2：算法入门]]></title>
+            <description><![CDATA[The problem of sorting]]></description>
+            <link>https://xinwuyun.github.io/算法/CH2：算法入门.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH2：算法入门.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>CH2 算法入门</center>]]></title>
+            <description><![CDATA[image-20220605145111689]]></description>
+            <link>https://xinwuyun.github.io/算法/CH2：算法入门_review.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH2：算法入门_review.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH3：Growth of Functions]]></title>
+            <description><![CDATA[Topics：]]></description>
+            <link>https://xinwuyun.github.io/算法/CH3：Growth_of_Functions.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH3：Growth_of_Functions.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH3：Growth of Functions]]></title>
+            <description><![CDATA[image-20220605154233378]]></description>
+            <link>https://xinwuyun.github.io/算法/CH3：Growth_of_Functions_review.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH3：Growth_of_Functions_review.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>CH4：Recurrences</center>]]></title>
+            <description><![CDATA[CH4：Recurrences]]></description>
+            <link>https://xinwuyun.github.io/算法/CH4：Recurrences.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH4：Recurrences.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH6：HeapSort]]></title>
+            <description><![CDATA[CH6：HeapSort]]></description>
+            <link>https://xinwuyun.github.io/算法/CH6：HeapSort.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH6：HeapSort.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH7：QuickSort]]></title>
+            <description><![CDATA[随机的应用：]]></description>
+            <link>https://xinwuyun.github.io/算法/CH7：QuickSort.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH7：QuickSort.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH8：Sorting in linear time]]></title>
+            <description><![CDATA[Comparision Sort 比较排序：在排序的最终结果中，各元素的次序依赖于他们之间的<font color = "red">比较</font>。]]></description>
+            <link>https://xinwuyun.github.io/算法/CH8：Sorting_in_linear_time.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH8：Sorting_in_linear_time.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH9：Medians and Order Statistics]]></title>
+            <description><![CDATA[image-20220613115728740]]></description>
+            <link>https://xinwuyun.github.io/算法/CH9：Medians_and_Order_Statistics.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH9：Medians_and_Order_Statistics.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH10：Divide and Conquer：More Algorithms]]></title>
+            <description><![CDATA[image-20220613140304515]]></description>
+            <link>https://xinwuyun.github.io/算法/CH10：Divide_and_Conquer：More_Algorithms.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH10：Divide_and_Conquer：More_Algorithms.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH15：Dynamic Programming]]></title>
+            <description><![CDATA[MindMap：]]></description>
+            <link>https://xinwuyun.github.io/算法/CH15：Dynamic_Programming.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH15：Dynamic_Programming.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH16：Greedy Algorithms]]></title>
+            <description><![CDATA[MindMap：]]></description>
+            <link>https://xinwuyun.github.io/算法/CH16：Greedy_Algorithms.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH16：Greedy_Algorithms.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH24：Shorest Path]]></title>
+            <description><![CDATA[MindMap：]]></description>
+            <link>https://xinwuyun.github.io/算法/CH24：Shorest_Path.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH24：Shorest_Path.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH25：Back-Tracking]]></title>
+            <description><![CDATA[MindMap：]]></description>
+            <link>https://xinwuyun.github.io/算法/CH25：Back-Tracking.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH25：Back-Tracking.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/软件体系结构/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/about.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>CH1：Introduction</center>]]></title>
+            <description><![CDATA[Only one Point：软件体系结构的定义]]></description>
+            <link>https://xinwuyun.github.io/软件体系结构/CH1：Introduction.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH1：Introduction.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>CH2：Achitecture Style</center>]]></title>
+            <description><![CDATA[MindMap：]]></description>
+            <link>https://xinwuyun.github.io/软件体系结构/CH2：Achitecture_Style.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH2：Achitecture_Style.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH3：软件体系结构建模和文档化]]></title>
+            <description><![CDATA[用例图：理解系统功能需求的宝贵工具]]></description>
+            <link>https://xinwuyun.github.io/软件体系结构/CH3：UML.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH3：UML.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>CH4：理解质量属性</center>]]></title>
+            <description><![CDATA[质量属性场景：]]></description>
+            <link>https://xinwuyun.github.io/软件体系结构/CH4：理解质量属性.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件体系结构/CH4：理解质量属性.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[简洁优雅的排版语言,简化版的 HTML,加强版的 TXT,详情请参考 https://xinwuyun.github.io/markdown/]]></description>
+            <link>https://xinwuyun.github.io/GLOSSARY.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/GLOSSARY.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+    </channel>
+</rss>
