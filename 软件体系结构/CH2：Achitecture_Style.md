@@ -47,7 +47,7 @@ MindMap：
 
   the structure of the design is dominated by orderly motion of **data  from process to process**
 
-  ![image-20220610194442613](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220610194442613.png)
+  <img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220610194442613.png" alt="image-20220610194442613" style="zoom:50%;" />
 
 - 数据流系统的结构是显而易见的
 

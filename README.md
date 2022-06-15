@@ -20,8 +20,10 @@
 - [CH24：Shorest_Path](/算法/CH24：Shorest_Path.md)
 - [CH25：Back-Tracking](/算法/CH25：Back-Tracking.md)
 
-[软件体系结构](/软件体系结构/about.md)
+[软件体系结](/软件体系结构/about.md)
 
+- [CH1：Introduction](/软件体系结构/CH1：Introduction.md)
 - [CH2：Achitecture_Style](/软件体系结构/CH2：Achitecture_Style.md)
+- [CH3：UML](/软件体系结构/CH3：UML.md)
 - [CH4：理解质量属性](/软件体系结构/CH4：理解质量属性.md)
 - [CH5：ATMA](/软件体系结构/CH5：ATMA.md)
