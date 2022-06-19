@@ -10,9 +10,10 @@ MindMap：
 
 架构风格 Achitecture Style  = 
 
-- 组件 component
-- 连接件Connector vocabulary
-- 约束Semantic Constraint 
+- 一组组件类型 component type / 连接件类型 connector type（交互机制）
+- 组件的拓扑分布
+- 一组对拓扑和行为的约束
+- 一些对风格的代价和益处的非正式描述
 
 如何描述的？重点要看
 
@@ -570,7 +571,7 @@ $$
 $$
 
 - 无法直接使用最合适的语言或者机器来执行解决方案
-- 核心问题是定义解决方案的表示法的应用程序，如脚本
+- 核心问题是定义解决方案的符号的应用程序，如脚本
 - 有时以链的形式使用，在一系列阶段的过程中从需要的语言/机器翻译
 
 上下文：
@@ -596,11 +597,11 @@ Solution：
 
 - 优点
 
-功能性：可以模拟非本机功能
+功能性 functionality ：可以模拟非本机功能
 
-测试性：可以模拟灾难模式（安全攸关的应用）
+测试性 testing ：可以模拟灾难模式（安全攸关的应用）
 
-灵活性：非常通用的工具
+灵活性 flexibility ：非常通用的工具
 
 - 缺点
 
@@ -654,13 +655,13 @@ eg：hearsay
 - 操作系统
 - 分布式应用
 
-![image-20220615105611923](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220615105611923.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220615105611923.png" alt="image-20220615105611923" style="zoom:50%;" />
 
 #### 2.6.1.2 进程间通信
 
 ##### （1）应用问题
 
-- 包含一系列不同的，在很大程度上独立的计算的应用程序，这些计算的执行应该独立进行。
+- 包含一系列**不同的，在很大程度上独立的计算的应用程序**，这些计算的执行应该独立进行。
 - 计算涉及**数据的协调**或者**对离散的时间点**的控制。因此，系统的正确性需要注意**消息的路由和同步**。
 
 eg：网络游戏的例子
@@ -696,9 +697,7 @@ eg：网络游戏的例子
 
 #### 2.7.1.1 隐式调用 implicit invocation
 
-
-
-![image-20220615115959832](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220615115959832.png)
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220615115959832.png" alt="image-20220615115959832" style="zoom:50%;" />
 
 ##### （1）问题
 
