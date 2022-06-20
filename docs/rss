@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sun, 19 Jun 2022 09:55:19 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 20 Jun 2022 06:46:59 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -182,16 +182,23 @@
         </item>
         <item>
             <title><![CDATA[<center>PART2-选择题答案整理</center>]]></title>
-            <description><![CDATA[During which phase must project teams address important considerations for managing information (and often end up updating business processes through improved communications)?]]></description>
+            <description><![CDATA[What important Scrum artifact is used to graphically display progress on each sprint during the monitoring and controlling process?]]></description>
             <link>https://xinwuyun.github.io/软件过程与项目管理/PART2-选择题答案整理.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/软件过程与项目管理/PART2-选择题答案整理.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[<center>PART3-填空题易错整理</center>]]></title>
+            <description><![CDATA[<u>Agile</u> software development can be used for software development or in any environment in which the requirements are unknown or change quickly.]]></description>
+            <link>https://xinwuyun.github.io/软件过程与项目管理/PART3-填空题.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件过程与项目管理/PART3-填空题.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[No title]]></title>
             <description><![CDATA[scope、cost 、time]]></description>
-            <link>https://xinwuyun.github.io/软件过程与项目管理/PART3-简答题.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/软件过程与项目管理/PART3-简答题.html</guid>
+            <link>https://xinwuyun.github.io/软件过程与项目管理/PART4-简答题.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/软件过程与项目管理/PART4-简答题.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
