@@ -1,5 +1,155 @@
 # <center>PART2-选择题答案整理</center>
 
+## 1.易错题
+
+What important Scrum artifact is used to graphically display progress on each sprint during the monitoring and controlling process? 
+
+a. WBS                    b. sprint backlog 
+
+c. burndown chart          d. product backlog
+
+Answer C
+
+
+
+What is developed in the **Project Integration Management** knowledge area?
+
+a. schedule management plan         **b. project management plan** 
+
+c. WBS                                                   d. quality management
+
+初始阶段：计划
+
+
+
+Which activity is a part of the Scrum planning process?              
+
+a. Determining how many sprints will compose each release
+
+b. Demonstrating the product during a sprint review meeting
+
+c. Completing tasks each day during sprints
+
+**d. Creating sprint backlog**
+
+
+
+The <u>______</u> is responsible for maximizing **return on investment (ROI)** by identifying product features, translating these into a prioritized feature list, deciding which should be at the top of the list for the next Sprint, and continually re-prioritizing and refining the list.
+
+A) Scrum Master            B) Product Owner
+
+C) Manager                D) Team
+
+ANSWER: B
+
+
+
+Which information is included in a business case业务用例?  
+
+​    a.   business need for the project
+
+​    b.   relevant government or industry standards
+
+​    c.   project objective, high-level requirements, and time and cost goals  
+
+​           项目目标、高层次需求、时间和成本目标
+
+​    d.   policies, procedures, guidelines, and systems that influence a project’s success
+
+
+
+What is the first step in the planning process?                    A
+
+​    a. tie the information technology **strategic plan** to the **organization’s overall strategic plan**
+
+​    b.   perform a business area analysis
+
+​    c.   start defining potential IT projects in terms of their scope, benefits, and constraints
+
+​    d.   choose which projects to do and assigning resources to work on them
+
+ANSWER:    a
+
+
+
+Which process includes defining project scope, benefits, and constraints?          A
+
+​    a.   project planning            b.    business area analysis
+
+​    c.   resource allocation d.   information technology strategy planning
+
+ANSWER:    a
+
+
+
+Which process involves working with stakeholders to create the document that formally authorizes a project?
+
+​    a.   Developing the project charter[项目章程]
+
+​    b.   Developing the preliminary project scope statement
+
+​    c.   Developing the project management plan
+
+​    d.   Performing integrated change control
+
+
+
+Which technique is used for making cost and schedule trade-offs to obtain the **greatest amount** of schedule compression **for the least incremental** cost?
+
+​    a.   dependency           b.   crashing[崩溃！]
+
+​    c.   critical chain scheduling          d.    feeding buffers
+
+
+
+What term is used for the amount of time an activity can be delayed from its early start without delaying the planned project finish date【不延迟结束时间】?
+
+​    **a.   total slack**                 b.   free float
+
+​    c.   backward pass         d.    forward pass
+
+ANSWER:    a
+
+
+
+What term is used for the amount of time an activity can be delayed without delaying the early start date of any immediately following activities【不延迟开始时间】?
+
+​    a.   forward pass  b.   backward pass
+
+​    c.   fast tracking   **d.   free slack**
+
+ANSWER:    d
+
+
+
+Which method is used for determining the estimated annual costs [年度成本]and benefits[和收益] for a project?
+
+​    a.   Critical path analysis    b.   Cash flow analysis 现金流分析
+
+​    c.   Present value analysis       d.   Requirements analysis
+
+ANSWER:    b
+
+
+
+Scope, time and cost goals in order of importance can be ranked on an _expectations management_matrix___.
+
+​    a.   requirements traceability matrix   b.   expectations management matrix
+
+​    c.   responsibility assignment matrix   d.   probability matrix
+
+
+
+Which process involves numerically estimating the effects of risks on project objectives?
+
+​    a.   performing qualitative risk analysis       b.   planning risk responses
+
+​    c.   identifying risks                          d.   performing quantitative risk analysis
+
+
+
+## 2.全部题目
+
 During which phase must project teams address important considerations for managing information (and often end up updating business processes through improved communications)?
 
 在哪个阶段，项目团队必须处理**管理信息**的重要考虑事项(并且经常通过改进的通信来更新业务流程)?

@@ -34,6 +34,8 @@ scope、cost 、time
 
 - Waterfall
 
+
+
 ## 4.difference between scrum and waterfall ( at least 5 difference)
 
 | 方面      | Scrum                                                        | Waterfall                                                    |
@@ -103,10 +105,52 @@ project duration：13
 
 ## 10.What is performance reporting? What are some methods used for performance reporting?
 
-Performance reporting keeps stakeholders informed about how resources are being used to achieve project objectives 
+Performance reporting keeps **stakeholders** informed about **how resources are being used to achieve project objectives** 
 
-• Progress reports describe what the project team has accomplished during a certain period of time 
+• **Progress reports** describe <u>what</u> the project team <u>has accomplished</u> <u>during a certain period of time</u> 
 
-• Status reports describe where the project stands at a specific point in time 
+• **Status reports** describe <u>where</u> the project <u>stands</u> <u>at a specific point in time</u> 
 
-• Forecasts predict future project status and progress based on past information and trends
+• **Forecasts** predict future project <u>**status**</u> and <u>**progress**</u> based on past **<u>information and trends</u>**
+
+
+
+## 11.What are the 12 principles behind the Agile Manifesto?
+
+- **satisfy the customer** through **early and continuous delivery** of valuable software
+- **Welcome changing requirements**, even late in development
+- **Deliver** working software **frequently**
+- **Business people** and developers must work together
+
+---
+
+- Build projects around **motivated individuals**. Give them the environment and support they need, and trust them.
+
+- The most efficient and effective method of **conveying information** is **face-to-face conversation**
+- **Working software** is the primary measure of **progress**.
+- The **sponsors**, **developers**, and **users** should be able to maintain **<u>a constant pace</u>** indefinitely.
+
+---
+
+- Continuous attention to **technical excellece and good design**
+
+- Simplicity–the art of **maximizing the amount of work** not done–is essential.
+- The best **architectures, requirements, and designs** emerge from **self-organizing teams**.
+- The team **reflects on** how to become more effective and adjusts its behavior accordingly.
+
+
+
+## 12.What are the 5 stages of the Tuckman model？
+
+- Forming
+- Storming
+- Norming
+- Performing
+- Adjourning
+
+
+
+## 13.What are the associated activities and deliverable along Project Process Groups？
+
+![image-20220619221250476](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220619221250476.png)
+

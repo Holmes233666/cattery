@@ -40,7 +40,7 @@
 
 48. A unit of work should appear at only one place in the WBS                                                                                                     (T)
 
-51.In project schedule management, the primary output of defining activities is a schedule management plan               (F)
+51.In project schedule management, the primary **output** of defining activities is a schedule management plan               (F)
 
 55.Network diagrams are the preferred technique for showing activity sequencing                                                              (T)
 
