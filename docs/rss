@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 20 Jun 2022 06:46:59 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 04 Aug 2022 13:51:13 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -72,7 +72,7 @@
         </item>
         <item>
             <title><![CDATA[CH6：HeapSort]]></title>
-            <description><![CDATA[CH6：HeapSort]]></description>
+            <description><![CDATA[image-20220804203355365]]></description>
             <link>https://xinwuyun.github.io/算法/CH6：HeapSort.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH6：HeapSort.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
@@ -107,7 +107,7 @@
         </item>
         <item>
             <title><![CDATA[CH15：Dynamic Programming]]></title>
-            <description><![CDATA[MindMap：]]></description>
+            <description><![CDATA[CH15：Dynamic Programming]]></description>
             <link>https://xinwuyun.github.io/算法/CH15：Dynamic_Programming.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/算法/CH15：Dynamic_Programming.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
