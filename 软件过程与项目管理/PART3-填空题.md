@@ -22,9 +22,9 @@ If done well, the **<u>Agile approach_</u>** can produce several releases of use
 
 A(n) <u>**_weighted scoring model**</u> is a tool that provides a systematic process for selecting projects based on many criteria.
 
-A(n) **<u>_CCB</u>** is a formal group of people responsible for approving or rejecting changes to a project.
+A(n) **<u>_change control board</u>** is a formal group of people responsible for approving or rejecting changes to a project.
 
-A(n) **<u>ROM</u>** estimate is done very early in a project or even before a project is officially started.
+A(n) **<u>rough order of man</u>** estimate is done very early in a project or even before a project is officially started.
 
 ___<u>Function Ponits</u>_____ are a means of measuring software size based on what the software does for end users.
 
@@ -33,3 +33,8 @@ A(n) **<u>_cost-baseline</u>**_ is a time-phased budget that project managers us
 **<u>_EVM</u>**_ is a project performance measurement technique that integrates scope, time, and cost data.
 
 The <u>__EV___</u> is the measure of work performed expressed in terms of the budget authorized for that work.
+
+
+
+<u>**artifacts**</u>
+

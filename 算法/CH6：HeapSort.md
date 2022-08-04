@@ -2,7 +2,7 @@
 
 ## MindMap
 
-![CH6：HeapSort](CH6%EF%BC%9AHeapSort.assets/CH6%EF%BC%9AHeapSort.png)
+![image-20220804203355365](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220804203355365.png)
 
 Topics：
 
@@ -66,7 +66,7 @@ $$
 
   - $RIGHT(i) = 2i+1$
 
-    <img src="CH6%EF%BC%9AHeapSort.assets/image-20220607092832741.png" alt="image-20220607092832741" style="zoom:50%;" />
+    <img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220607092832741.png" alt="image-20220607092832741" style="zoom:50%;" />
 
   若**数组下标从0开始**，那么父子映射关系函数为：
 
@@ -156,7 +156,7 @@ void buildMaxHeap_iteration(vector<int>& vec) {
 } 
 ```
 
-![image-20220607145156611](CH6%EF%BC%9AHeapSort.assets/image-20220607145156611.png)
+![image-20220607145156611](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220607145156611.png)
 
 #### （3）合并过程：`MAXHEAPIFY`
 

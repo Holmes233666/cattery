@@ -1,6 +1,6 @@
 # CH15：Dynamic Programming 
 
-MindMap：
+## MindMap：
 
 ![CH15：Dynamic Programming](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/CH15%EF%BC%9ADynamic%20Programming.png)
 

@@ -21,7 +21,7 @@ for(i = 2; i < length[A]; i++){
 }
 ```
 
-![image-20220320202930700](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220320202930700.png)
+![image-20220320202930700](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220320202930700.png)
 
 ## 2.2 Kinds of Analysis
 
@@ -101,7 +101,7 @@ RAM：单处理机，随机存储模型  random-access-machine（RAM） Model
 
 ### 2.3.2 Analysis of Insert Operation
 
-![image-20220321154855659](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220321154855659.png)
+![image-20220321154855659](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220321154855659.png)
 
 插入排序的时间计算如下：
 $$
@@ -154,7 +154,7 @@ To solve P：
 - **Conquer** by solving the (smaller) subproblems recursively
 - **Combine** the solutions to $$P_1,P_2,...,P_k$$ into the solution  for P
 
-![image-20220321164743811](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220321164743811.png)
+![image-20220321164743811](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220321164743811.png)
 
 #### （1）Merge Sort
 
@@ -204,7 +204,7 @@ Merge(A, p, q, r)
 
 **Actions of Merge Sort：**
 
-![image-20220321172825181](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220321172825181.png)
+![image-20220321172825181](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220321172825181.png)
 
 
 
@@ -248,7 +248,7 @@ $$
 - 最坏
 - 平均
 
-![image-20220321192232644](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220321192232644.png)
+![image-20220321192232644](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220321192232644.png)
 
 $log_2^n+1$是针对结点的，若是针对边则是$log_2^n$。每层的和是一定的，都是cn
 

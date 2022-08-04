@@ -97,7 +97,7 @@ $$
 
 ![image-20220609100759740](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220609100759740.png)
 
-没有要和j比的，aj的开始时间是无穷大，肯定满足。
+没有要和j比的，aj的开始时间是无穷大，肯定满足。  
 
 - 迭代实现
 

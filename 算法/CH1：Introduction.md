@@ -10,7 +10,7 @@
 
   架构：
 
-  ![image-20220319200833490](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220319200833490.png)
+  ![image-20220319200833490](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220319200833490.png)
 
   架构的类型：
   $$
@@ -20,15 +20,15 @@
 
   - Java EE
 
-  ![image-20220319201358028](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220319201358028.png)
+  ![image-20220319201358028](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220319201358028.png)
 
   - CORBA
 
-    ![image-20220319201454935](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220319201454935.png)
+    ![image-20220319201454935](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220319201454935.png)
 
   - .NET（与javaEE类似）
 
-    ![image-20220319201524182](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220319201524182.png)
+    ![image-20220319201524182](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220319201524182.png)
 
 
 
@@ -48,7 +48,7 @@ Concept：A well-Defined **computational procedure** that takes some value, or s
 
 Broadly：a step-step procedure for solving a problem or accomplishing some end  especially by a computer.
 
-![image-20220319203553868](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220319203553868.png)
+![image-20220319203553868](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220319203553868.png)
 
 issues：
 
@@ -88,6 +88,6 @@ issues：
 
   评价算法，定量
 
-  ![image-20220320105027537](https://gitee.com/sun-yunqi/img/raw/master/pictureStore/image-20220320105027537.png)
+  ![image-20220320105027537](https://cdn.jsdelivr.net/gh/Holmes233666/gitee-image@main/pictureStore/image-20220320105027537.png)
 
   

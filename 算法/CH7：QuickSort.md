@@ -53,7 +53,7 @@ void quickSort(vector<int>& vec, int start, int end) {
 
 注意各个区间的表示含义：
 
-![image-20220607225855006](C:/Users/%E5%AD%99%E8%95%B4%E7%90%A6/AppData/Roaming/Typora/typora-user-images/image-20220607225855006.png)
+![image-20220607225855006](https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220607225855006.png)
 
 程序如下：
 
@@ -92,7 +92,7 @@ T(n) = T(n-1) + T(0) +\Theta(n)
 $$
 递归树如下：
 
-<img src="C:/Users/%E5%AD%99%E8%95%B4%E7%90%A6/AppData/Roaming/Typora/typora-user-images/image-20220607230840358.png" alt="image-20220607230840358" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220607230840358.png" alt="image-20220607230840358" style="zoom:50%;" />
 
 ##### （2）快排的最好情况
 
@@ -102,7 +102,7 @@ T(n) = 2T(n/2) +\Theta(n)
 $$
 此时，递归树如下：
 
-<img src="C:/Users/%E5%AD%99%E8%95%B4%E7%90%A6/AppData/Roaming/Typora/typora-user-images/image-20220607231150669.png" alt="image-20220607231150669" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220607231150669.png" alt="image-20220607231150669" style="zoom:50%;" />
 
 时间复杂度与归并相同。
 
@@ -114,7 +114,7 @@ T(n) = T(9n/10)+T(n/10) +\Theta(n)
 $$
 此时的递归树如下：
 
-<img src="C:/Users/%E5%AD%99%E8%95%B4%E7%90%A6/AppData/Roaming/Typora/typora-user-images/image-20220607231529911.png" alt="image-20220607231529911" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/Holmes233666/blogImage@main/img/image-20220607231529911.png" alt="image-20220607231529911" style="zoom:50%;" />
 
 每次都除以$9/10$，那么树高为$log_{\frac{10}{9}}^{n}$
 
