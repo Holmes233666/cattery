@@ -24,7 +24,7 @@
 
 - [软件体系结构](软件体系结构/about.md)
   - [CH1：Introduction](软件体系结构/CH1：Introduction.md)
-  
+
   - [CH2：Achitecture_Style](软件体系结构/CH2：Achitecture_Style.md)
   - [CH3：UML](软件体系结构/CH3：UML.md)
   - [CH4：理解质量属性](软件体系结构/CH4：理解质量属性.md)
@@ -36,6 +36,11 @@
   - [PART3-填空题](软件过程与项目管理/PART3-填空题.md)
   - [PART4-简答题](软件过程与项目管理/PART4-简答题.md)
 
+
+## 保研笔记
+
 - [保研算法练习AcWing训练](保研算法练习AcWing训练/about.md)
   - [基础算法.md](保研算法练习AcWing训练/基础算法.md)
 
+- [论文阅读](论文阅读/about.md)
+  - [Scaling Distributed Machine Learing with the Parameter Server 阅读笔记](论文阅读/Scaling Distributed Machine Learing with the Parameter Server 阅读笔记.md)
