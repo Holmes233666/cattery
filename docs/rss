@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 04 Aug 2022 13:51:13 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Aug 2022 09:29:56 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -199,6 +199,23 @@
             <description><![CDATA[scope、cost 、time]]></description>
             <link>https://xinwuyun.github.io/软件过程与项目管理/PART4-简答题.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/软件过程与项目管理/PART4-简答题.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/保研算法练习AcWing训练/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/保研算法练习AcWing训练/about.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[CH1：基础算法]]></title>
+            <description><![CDATA[包含两个典型的排序算法
+$$
+\begin{cases}归并排序\快速排序\end{cases}
+$$
+程序实现如下：]]></description>
+            <link>https://xinwuyun.github.io/保研算法练习AcWing训练/基础算法.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/保研算法练习AcWing训练/基础算法.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
