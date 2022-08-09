@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 09 Aug 2022 09:29:56 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 09 Aug 2022 09:35:11 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -216,6 +216,19 @@ $$
 程序实现如下：]]></description>
             <link>https://xinwuyun.github.io/保研算法练习AcWing训练/基础算法.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/保研算法练习AcWing训练/基础算法.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/论文阅读/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/about.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Scaling Distributed Machine Learing with the Parameter Server 阅读笔记]]></title>
+            <description><![CDATA[OSDI会议：操作系统设计和实现，SOSP两个会议是系统领域的两大会议]]></description>
+            <link>https://xinwuyun.github.io/论文阅读/Scaling Distributed Machine Learing with the Parameter Server 阅读笔记.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/Scaling Distributed Machine Learing with the Parameter Server 阅读笔记.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
