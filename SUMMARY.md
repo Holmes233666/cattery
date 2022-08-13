@@ -40,7 +40,12 @@
 ## 保研笔记
 
 - [保研算法练习AcWing训练](保研算法练习AcWing训练/about.md)
-  - [基础算法.md](保研算法练习AcWing训练/基础算法.md)
+  - [基础算法](保研算法练习AcWing训练/基础算法.md)
 
 - [论文阅读](论文阅读/about.md)
-  - [Scaling Distributed Machine Learing with the Parameter Server 阅读笔记](论文阅读/Scaling Distributed Machine Learing with the Parameter Server 阅读笔记.md)
+  - [Scaling Distributed Machine Learing with the Parameter Server 阅读笔记](论文阅读/参数服务器（parameter_server）阅读笔记.md)
+
+- [离散数学](/离散数学/about.md)
+  - [集合论基础](离散数学/集合论基础.md)
+  - [命题逻辑](离散数学/命题逻辑.md)
+  - [命题逻辑的推理理论](离散数学/命题逻辑的推理理论.md)

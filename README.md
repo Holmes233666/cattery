@@ -20,7 +20,7 @@
 - [CH24：Shorest_Path](/算法/CH24：Shorest_Path.md)
 - [CH25：Back-Tracking](/算法/CH25：Back-Tracking.md)
 
-[软件体系结](/软件体系结构/about.md)
+[软件体系结构](/软件体系结构/about.md)
 
 - [CH1：Introduction](/软件体系结构/CH1：Introduction.md)
 - [CH2：Achitecture_Style](/软件体系结构/CH2：Achitecture_Style.md)
@@ -43,4 +43,10 @@
 
 [论文阅读](/论文阅读/about.md)
 
-- [Scaling Distributed Machine Learing with the Parameter Server 阅读笔记](/论文阅读/Scaling Distributed Machine Learing with the Parameter Server 阅读笔记.md)
+- [Scaling Distributed Machine Learing with the Parameter Server 阅读笔记](/论文阅读/参数服务器（parameter_server）阅读笔记.md)
+
+[离散数学](/离散数学/about.md)
+
+- [集合论基础](/离散数学/集合论基础.md)
+- [命题逻辑](/离散数学/命题逻辑.md)
+- [命题逻辑的推理理论](/离散数学/命题逻辑的推理理论.md)
