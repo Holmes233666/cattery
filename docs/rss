@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 09 Aug 2022 09:35:11 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 13 Aug 2022 09:39:38 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -227,8 +227,35 @@ $$
         <item>
             <title><![CDATA[Scaling Distributed Machine Learing with the Parameter Server 阅读笔记]]></title>
             <description><![CDATA[OSDI会议：操作系统设计和实现，SOSP两个会议是系统领域的两大会议]]></description>
-            <link>https://xinwuyun.github.io/论文阅读/Scaling Distributed Machine Learing with the Parameter Server 阅读笔记.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/Scaling Distributed Machine Learing with the Parameter Server 阅读笔记.html</guid>
+            <link>https://xinwuyun.github.io/论文阅读/参数服务器（parameter_server）阅读笔记.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/参数服务器（parameter_server）阅读笔记.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/离散数学/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/about.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[集合论基础]]></title>
+            <description><![CDATA[image-20220812194123427]]></description>
+            <link>https://xinwuyun.github.io/离散数学/集合论基础.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/集合论基础.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[命题逻辑]]></title>
+            <description><![CDATA[数理逻辑研究的中心问题是推理，而推理的前提和结论都是命题，因而命题是基本的推理单元。]]></description>
+            <link>https://xinwuyun.github.io/离散数学/命题逻辑.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/命题逻辑.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[命题逻辑的推理理论]]></title>
+            <description><![CDATA[所谓推理，指的是从一组前提合乎逻辑地推理出结论的过程。在这里我们用命题公式来表达前提和结论。]]></description>
+            <link>https://xinwuyun.github.io/离散数学/命题逻辑的推理理论.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/命题逻辑的推理理论.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
