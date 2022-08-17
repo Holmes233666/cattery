@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Sat, 13 Aug 2022 09:39:38 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 17 Aug 2022 04:02:18 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -232,6 +232,20 @@ $$
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
+            <title><![CDATA[PATHWAYS: ASYNCHRONOUS DISTRIBUTED DATAFLOW FOR ML]]></title>
+            <description><![CDATA[​      本篇论文介绍了用于加速器的新的大规模的编排层orchestration layer的设计——Pathways。论文新型异步分布式数据流关键在两点：]]></description>
+            <link>https://xinwuyun.github.io/论文阅读/PATHWAYS阅读笔记.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/PATHWAYS阅读笔记.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Alpa: Automating Inter- and Intra-Operator Parallelism for Distributed Deep Learning]]></title>
+            <description><![CDATA[​	  深度学习最近的进展直接导致了模型大小的变化，如：GPD3亿万级别的参数，同时在更大数据集上进行修改以支持兼容性。最新的模型上参数的数量以指数的形式增长。]]></description>
+            <link>https://xinwuyun.github.io/论文阅读/Alpa阅读笔记.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/Alpa阅读笔记.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
             <title><![CDATA[No title]]></title>
             <link>https://xinwuyun.github.io/离散数学/about.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/about.html</guid>
@@ -256,6 +270,20 @@ $$
             <description><![CDATA[所谓推理，指的是从一组前提合乎逻辑地推理出结论的过程。在这里我们用命题公式来表达前提和结论。]]></description>
             <link>https://xinwuyun.github.io/离散数学/命题逻辑的推理理论.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/命题逻辑的推理理论.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[谓词逻辑（一阶逻辑）]]></title>
+            <description><![CDATA[image-20220817115555709]]></description>
+            <link>https://xinwuyun.github.io/离散数学/谓词逻辑.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/谓词逻辑.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[二元关系]]></title>
+            <description><![CDATA[定义：由两个元素<u>按照一定的次序</u>组成的二元组称为序偶，记做$<x,y>$，其中**$x$是第一元素，$y$是第二元素**。【顺序很重要】]]></description>
+            <link>https://xinwuyun.github.io/离散数学/二元关系.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/二元关系.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
