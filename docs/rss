@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 17 Aug 2022 04:02:18 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Aug 2022 09:34:02 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -284,6 +284,24 @@ $$
             <description><![CDATA[定义：由两个元素<u>按照一定的次序</u>组成的二元组称为序偶，记做$<x,y>$，其中**$x$是第一元素，$y$是第二元素**。【顺序很重要】]]></description>
             <link>https://xinwuyun.github.io/离散数学/二元关系.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/二元关系.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/离散数学/特殊关系.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/特殊关系.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/离散数学/函数.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/函数.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/离散数学/图论基础.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/图论基础.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
