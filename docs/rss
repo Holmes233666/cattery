@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 18 Aug 2022 09:34:02 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 19 Aug 2022 06:09:58 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -287,7 +287,8 @@ $$
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[特殊关系]]></title>
+            <description><![CDATA[设R是非空集合A上的关系，如果R是自反的，对称的，传递的，则称R为A上的等价关系。]]></description>
             <link>https://xinwuyun.github.io/离散数学/特殊关系.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/特殊关系.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
