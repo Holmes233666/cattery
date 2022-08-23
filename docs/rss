@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 19 Aug 2022 06:09:58 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 23 Aug 2022 07:50:37 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -227,8 +227,8 @@ $$
         <item>
             <title><![CDATA[Scaling Distributed Machine Learing with the Parameter Server 阅读笔记]]></title>
             <description><![CDATA[OSDI会议：操作系统设计和实现，SOSP两个会议是系统领域的两大会议]]></description>
-            <link>https://xinwuyun.github.io/论文阅读/参数服务器（parameter_server）阅读笔记.html</link>
-            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/参数服务器（parameter_server）阅读笔记.html</guid>
+            <link>https://xinwuyun.github.io/论文阅读/ParameterServer阅读笔记.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/ParameterServer阅读笔记.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
@@ -243,6 +243,20 @@ $$
             <description><![CDATA[​	  深度学习最近的进展直接导致了模型大小的变化，如：GPD3亿万级别的参数，同时在更大数据集上进行修改以支持兼容性。最新的模型上参数的数量以指数的形式增长。]]></description>
             <link>https://xinwuyun.github.io/论文阅读/Alpa阅读笔记.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/Alpa阅读笔记.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[FasterMoE：Modeling and Optimizing Training of Large-Scale Dynamic Pre-Trained Models]]></title>
+            <description><![CDATA[​      混合专家（Mixture-of-Expert，MoE）：目前最流行的预训练模型，使训练万亿级别以上的参数模型变得可能。MoE由许多小模型组成，即专家模型。]]></description>
+            <link>https://xinwuyun.github.io/论文阅读/FasterMoE阅读笔记.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/FasterMoE阅读笔记.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[<center>SEUSS 阅读报告</center>]]></title>
+            <description><![CDATA[​      首先论文引入了一个计算机领域普遍存在的问题：计算冗余。]]></description>
+            <link>https://xinwuyun.github.io/论文阅读/SEUSS阅读笔记.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/论文阅读/SEUSS阅读笔记.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
@@ -294,7 +308,8 @@ $$
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[函数]]></title>
+            <description><![CDATA[从二元关系的角度来研究函数]]></description>
             <link>https://xinwuyun.github.io/离散数学/函数.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/函数.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
