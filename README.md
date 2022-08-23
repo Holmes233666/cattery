@@ -43,9 +43,11 @@
 
 [论文阅读](/论文阅读/about.md)
 
-- [Scaling Distributed Machine Learing with the Parameter Server 阅读笔记](/论文阅读/参数服务器（parameter_server）阅读笔记.md)
-- [PATHWAYS阅读笔记](/论文阅读/PATHWAYS阅读笔记.md)
-- [Alpa阅读笔记](/论文阅读/Alpa阅读笔记.md)
+- [ParameterServer阅读笔记-2014-OSDI-李沐](/论文阅读/ParameterServer阅读笔记.md)
+- [PATHWAYS阅读笔记-2022-MLSys-JeffDean-Sanjay](/论文阅读/PATHWAYS阅读笔记.md)
+- [Alpa阅读笔记-2022-OSDI-郑怜悯](/论文阅读/Alpa阅读笔记.md)
+- [FasterMoE阅读笔记-2022-PPoPP-何家傲](/论文阅读/FasterMoE阅读笔记.md)
+- [SEUSS阅读笔记-2020-EuroSys-JamesCadden](/论文阅读/SEUSS阅读笔记.md)
 
 [离散数学](/离散数学/about.md)
 
