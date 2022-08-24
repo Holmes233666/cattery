@@ -41,14 +41,19 @@
 
 - [保研算法练习AcWing训练](保研算法练习AcWing训练/about.md)
   - [基础算法](保研算法练习AcWing训练/基础算法.md)
-
+- [计算机通信与网络保研复习](计网复习笔记/about.md)
+  - [补充：上下层协议](计网复习笔记/补充：常见协议的上下层协议.md)
+  - [数据链路层](计网复习笔记/数据链路层.md)
+  - [网络层](计网复习笔记/网络层.md)
+  - [传输层](计网复习笔记/传输层.md)
+  - [应用层](计网复习笔记/应用层.md)
+  - [面试常见问题](计网复习笔记/面试常见问题.md)
 - [论文阅读](论文阅读/about.md)
   - [ParameterServer阅读笔记-2014-OSDI-李沐](论文阅读/ParameterServer阅读笔记.md)
   - [PATHWAYS阅读笔记-2022-MLSys-JeffDean-Sanjay](论文阅读/PATHWAYS阅读笔记.md)
   - [Alpa阅读笔记-2022-OSDI-郑怜悯](论文阅读/Alpa阅读笔记.md)
   - [FasterMoE阅读笔记-2022-PPoPP-何家傲](论文阅读/FasterMoE阅读笔记.md)
   - [SEUSS阅读笔记-2020-EuroSys-JamesCadden](论文阅读/SEUSS阅读笔记.md)
-  
 - [离散数学](/离散数学/about.md)
   - [集合论基础](离散数学/集合论基础.md)
   - [命题逻辑](离散数学/命题逻辑.md)
