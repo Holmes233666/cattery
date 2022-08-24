@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Tue, 23 Aug 2022 07:50:37 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Aug 2022 12:05:13 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -216,6 +216,46 @@ $$
 程序实现如下：]]></description>
             <link>https://xinwuyun.github.io/保研算法练习AcWing训练/基础算法.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/保研算法练习AcWing训练/基础算法.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[针对哈深的笔试题复习，每章结束会列出相关章节的常见面试题]]></description>
+            <link>https://xinwuyun.github.io/计网复习笔记/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/计网复习笔记/about.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[ARP封装在以太网帧中]]></description>
+            <link>https://xinwuyun.github.io/计网复习笔记/补充：常见协议的上下层协议.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/计网复习笔记/补充：常见协议的上下层协议.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[数据链路层]]></title>
+            <description><![CDATA[[TOC]]]></description>
+            <link>https://xinwuyun.github.io/计网复习笔记/数据链路层.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/计网复习笔记/数据链路层.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[网络层]]></title>
+            <description><![CDATA[网络层的通信：主机到主机]]></description>
+            <link>https://xinwuyun.github.io/计网复习笔记/网络层.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/计网复习笔记/网络层.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/计网复习笔记/传输层.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/计网复习笔记/传输层.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/计网复习笔记/应用层.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/计网复习笔记/应用层.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
