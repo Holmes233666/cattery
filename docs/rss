@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 24 Aug 2022 12:05:13 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 24 Aug 2022 14:16:19 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -247,7 +247,8 @@ $$
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[传输层]]></title>
+            <description><![CDATA[传输层存在的基本理由：进程到进程的传递。]]></description>
             <link>https://xinwuyun.github.io/计网复习笔记/传输层.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/计网复习笔记/传输层.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
