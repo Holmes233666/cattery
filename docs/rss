@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Thu, 25 Aug 2022 06:48:49 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 26 Aug 2022 09:35:53 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -359,6 +359,20 @@ $$
             <title><![CDATA[No title]]></title>
             <link>https://xinwuyun.github.io/离散数学/图论基础.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/图论基础.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[英语面试常见问题总结]]></title>
+            <description><![CDATA[老师好，我是孙蕴琦，是来自西安电子科技大学软件工程专业的一名学生。我的专业排名为第2名，四六级成绩较好，分别为600和539分。]]></description>
+            <link>https://xinwuyun.github.io/经验贴-面试/保研英语面试常见问题总结.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/经验贴-面试/保研英语面试常见问题总结.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[Personal Statement]]></title>
+            <description><![CDATA[​    I am SunYunqi, an undergraduate student majoring in software engineering from Xidian University. I have always been fascinated by the strong scientific research atmosphere of Shanghai Jiao Tong University, hoping to be admitted by UM-SJTU Joint Institute. In the following, I will introduce myself from three aspects: my academic background, scientific research experience and research plan for the future postgraduate stage.]]></description>
+            <link>https://xinwuyun.github.io/经验贴-面试/英文个人陈述.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/经验贴-面试/英文个人陈述.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
