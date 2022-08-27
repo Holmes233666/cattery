@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 26 Aug 2022 09:35:53 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 27 Aug 2022 14:27:00 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -254,7 +254,8 @@ $$
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
-            <title><![CDATA[No title]]></title>
+            <title><![CDATA[应用层]]></title>
+            <description><![CDATA[在Internet的应用层中，许多应用都遵循客户机client/服务器server模式。客户端/服务器应用程序分为两类：]]></description>
             <link>https://xinwuyun.github.io/计网复习笔记/应用层.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/计网复习笔记/应用层.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
@@ -373,6 +374,13 @@ $$
             <description><![CDATA[​    I am SunYunqi, an undergraduate student majoring in software engineering from Xidian University. I have always been fascinated by the strong scientific research atmosphere of Shanghai Jiao Tong University, hoping to be admitted by UM-SJTU Joint Institute. In the following, I will introduce myself from three aspects: my academic background, scientific research experience and research plan for the future postgraduate stage.]]></description>
             <link>https://xinwuyun.github.io/经验贴-面试/英文个人陈述.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/经验贴-面试/英文个人陈述.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[预推免各院校经验贴总结]]></title>
+            <description><![CDATA[pre：英文面试问题汇总]]></description>
+            <link>https://xinwuyun.github.io/经验贴-面试/预推免各院校经验贴总结.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/经验贴-面试/预推免各院校经验贴总结.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
