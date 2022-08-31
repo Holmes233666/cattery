@@ -47,7 +47,6 @@
   - [网络层](计网复习笔记/网络层.md)
   - [传输层](计网复习笔记/传输层.md)
   - [应用层](计网复习笔记/应用层.md)
-  - [面试常见问题](计网复习笔记/面试常见问题.md)
 - [论文阅读](论文阅读/about.md)
   - [ParameterServer阅读笔记-2014-OSDI-李沐](论文阅读/ParameterServer阅读笔记.md)
   - [PATHWAYS阅读笔记-2022-MLSys-JeffDean-Sanjay](论文阅读/PATHWAYS阅读笔记.md)
