@@ -4,7 +4,7 @@
         <description><![CDATA[xinwuyun静态网站,源码托管于 https://github.com/xinwuyun/xinwuyun.github.io]]></description>
         <link>https://xinwuyun.github.io/</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Wed, 31 Aug 2022 05:56:38 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 01 Sep 2022 02:22:23 GMT</lastBuildDate>
         <atom:link href="https://xinwuyun.github.io/rss" rel="self" type="application/rss+xml"/>
         <author><![CDATA[xinwuyun]]></author>
         <managingEditor><![CDATA[zrwangxdu@outlook.com]]></managingEditor>
@@ -360,6 +360,26 @@ $$
             <title><![CDATA[No title]]></title>
             <link>https://xinwuyun.github.io/离散数学/图论基础.html</link>
             <guid isPermaLink="true">https://xinwuyun.github.io/离散数学/图论基础.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <link>https://xinwuyun.github.io/操作系统复习笔记/about.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/操作系统复习笔记/about.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[引论]]></title>
+            <description><![CDATA[冯诺依曼机（硬件）组成：]]></description>
+            <link>https://xinwuyun.github.io/操作系统复习笔记/引论.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/操作系统复习笔记/引论.html</guid>
+            <dc:creator><![CDATA[xinwuyun]]></dc:creator>
+        </item>
+        <item>
+            <title><![CDATA[进程与线程]]></title>
+            <description><![CDATA[进程：对正在运行的程序的一个抽象。]]></description>
+            <link>https://xinwuyun.github.io/操作系统复习笔记/进程与线程.html</link>
+            <guid isPermaLink="true">https://xinwuyun.github.io/操作系统复习笔记/进程与线程.html</guid>
             <dc:creator><![CDATA[xinwuyun]]></dc:creator>
         </item>
         <item>
